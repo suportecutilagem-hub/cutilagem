@@ -118,15 +118,15 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <AnimatedSection>
             <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto">
-              <div className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20">
+              <div className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap">
                 <i className="fas fa-infinity text-xl"></i>
                 <span>Acesso Vitalício</span>
               </div>
-              <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20">
+              <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap">
                 <i className="fas fa-gift text-xl"></i>
                 <span>11 Bônus Exclusivos</span>
               </div>
-              <div className="col-span-2 bg-gradient-to-r from-emerald-500 to-green-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20">
+              <div className="col-span-2 bg-gradient-to-r from-emerald-500 to-green-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap">
                 <i className="fas fa-certificate text-xl"></i>
                 <span>6 Certificados Inclusos</span>
               </div>
