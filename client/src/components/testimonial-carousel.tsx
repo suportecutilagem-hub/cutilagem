@@ -122,11 +122,11 @@ export function TestimonialCarousel() {
             >
               <AnimatedSection className="group">
                 <div className="relative bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <div className="aspect-square overflow-hidden">
+                  <div className="overflow-hidden">
                     <img
                       src={result.image}
                       alt={result.description}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-500"
                       data-testid={`result-image-${result.id}`}
                     />
                   </div>
