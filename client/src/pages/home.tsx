@@ -114,13 +114,19 @@ export default function Home() {
       </section>
 
       {/* HIGHLIGHT SECTION */}
-      <section className="py-8 bg-primary">
+      <section className="py-6 bg-primary">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <AnimatedSection>
-            <div className="text-primary-foreground">
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">
-                ✅ Acesso vitalício • ✅ 11 bônus exclusivos • ✅ 6 certificados inclusos
-              </h3>
+            <div className="flex flex-wrap justify-center items-center gap-4">
+              <span className="bg-white/20 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-full text-sm md:text-base font-semibold">
+                Acesso vitalício
+              </span>
+              <span className="bg-white/20 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-full text-sm md:text-base font-semibold">
+                11 bônus exclusivos
+              </span>
+              <span className="bg-white/20 backdrop-blur-sm text-primary-foreground px-4 py-2 rounded-full text-sm md:text-base font-semibold">
+                6 certificados inclusos
+              </span>
             </div>
           </AnimatedSection>
         </div>
