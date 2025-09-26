@@ -117,14 +117,14 @@ export default function Home() {
       <section className="py-6">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <AnimatedSection>
-            <div className="flex flex-wrap justify-center items-center gap-4">
-              <span className="bg-primary text-white px-6 py-3 rounded-full text-sm md:text-base font-bold shadow-lg transform hover:scale-105 transition-all duration-300">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto">
+              <span className="bg-green-500 text-white px-4 py-3 rounded-full text-xs sm:text-sm font-bold shadow-lg transform hover:scale-105 transition-all duration-300 text-center">
                 Acesso vitalício
               </span>
-              <span className="bg-primary text-white px-6 py-3 rounded-full text-sm md:text-base font-bold shadow-lg transform hover:scale-105 transition-all duration-300">
+              <span className="bg-green-500 text-white px-4 py-3 rounded-full text-xs sm:text-sm font-bold shadow-lg transform hover:scale-105 transition-all duration-300 text-center">
                 11 Bônus exclusivos
               </span>
-              <span className="bg-primary text-white px-6 py-3 rounded-full text-sm md:text-base font-bold shadow-lg transform hover:scale-105 transition-all duration-300">
+              <span className="bg-green-500 text-white px-4 py-3 rounded-full text-xs sm:text-sm font-bold shadow-lg transform hover:scale-105 transition-all duration-300 text-center">
                 6 Certificados inclusos
               </span>
             </div>
