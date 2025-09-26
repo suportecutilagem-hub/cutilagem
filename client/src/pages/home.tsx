@@ -53,7 +53,7 @@ export default function Home() {
           </AnimatedSection>
 
           {/* Hero Image - Mobile Only (between banner and title) */}
-          <AnimatedSection delay={200} className="lg:hidden mb-8">
+          <AnimatedSection className="lg:hidden mb-8">
             <div className="flex justify-center">
               <img
                 src={heroImage}
@@ -66,25 +66,25 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <AnimatedSection delay={300}>
+              <AnimatedSection>
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight" data-testid="hero-title">
                   Curso de <span className="text-primary">Cutilagem Russa</span> Profissional
                 </h1>
               </AnimatedSection>
               
-              <AnimatedSection delay={400}>
+              <AnimatedSection>
                 <h2 className="text-xl md:text-2xl text-muted-foreground font-medium" data-testid="hero-subtitle">
                   Aprenda a técnica que já transformou mais de <span className="text-primary font-bold">23.000 alunas!</span>
                 </h2>
               </AnimatedSection>
               
-              <AnimatedSection delay={500}>
+              <AnimatedSection>
                 <p className="text-lg md:text-xl text-black" data-testid="hero-description">
                   Conquiste clientes, aumente sua renda e domine a técnica mais valorizada do mercado de manicure.
                 </p>
               </AnimatedSection>
               
-              <AnimatedSection delay={600}>
+              <AnimatedSection>
                 <div className="pt-4">
                   <a
                     href={checkoutUrl}
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
 
             {/* Hero Image - Desktop Only */}
-            <AnimatedSection delay={800} className="hidden lg:block">
+            <AnimatedSection className="hidden lg:block">
               <div>
                 <img
                   src={heroImage}
@@ -188,7 +188,7 @@ export default function Home() {
               <AnimatedSection
                 key={index}
                 animationType="slide-in"
-                delay={index * 100}
+
               >
                 <div className="flex items-start space-x-3" data-testid={`course-module-${index}`}>
                   <i className="fas fa-check-circle text-primary text-xl mt-1"></i>
@@ -218,7 +218,7 @@ export default function Home() {
             {bonuses.map((bonus, index) => (
               <AnimatedSection
                 key={`bonus-${index}`}
-                delay={index * 100}
+
               >
                 <div
                   className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
@@ -251,7 +251,6 @@ export default function Home() {
             {additionalBonuses.map((bonus, index) => (
               <AnimatedSection
                 key={`additional-bonus-${index}`}
-                delay={index * 150}
               >
                 <div
                   className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 border-2 border-primary/30"
