@@ -114,21 +114,21 @@ export default function Home() {
       </section>
 
       {/* HIGHLIGHT SECTION */}
-      <section className="py-3">
+      <section className="py-8 bg-gradient-to-r from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4 text-center">
           <AnimatedSection>
-            <div className="grid grid-cols-2 gap-2 max-w-xs mx-auto">
-              <div className="bg-green-500 text-white px-1 py-0.5 rounded text-base font-semibold shadow-md flex items-center justify-center gap-1">
-                <i className="fas fa-infinity text-xs"></i>
-                Acesso vitalício
+            <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+              <div className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2 border-2 border-white/20">
+                <i className="fas fa-infinity text-xl"></i>
+                <span>Acesso Vitalício</span>
               </div>
-              <div className="bg-green-500 text-white px-1 py-0.5 rounded text-base font-semibold shadow-md flex items-center justify-center gap-1">
-                <i className="fas fa-gift text-xs"></i>
-                11 Bônus exclusivos
+              <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2 border-2 border-white/20">
+                <i className="fas fa-gift text-xl"></i>
+                <span>11 Bônus Exclusivos</span>
               </div>
-              <div className="bg-green-500 text-white px-1 py-0.5 rounded text-base font-semibold shadow-md flex items-center justify-center gap-1 col-span-2">
-                <i className="fas fa-certificate text-xs"></i>
-                6 Certificados inclusos
+              <div className="bg-gradient-to-r from-emerald-500 to-green-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-2 border-2 border-white/20">
+                <i className="fas fa-certificate text-xl"></i>
+                <span>6 Certificados Inclusos</span>
               </div>
             </div>
           </AnimatedSection>
