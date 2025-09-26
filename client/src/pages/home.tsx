@@ -1,5 +1,6 @@
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { TestimonialCarousel } from "@/components/testimonial-carousel";
+import heroImage from "@assets/image_1758908203040.png";
 
 const checkoutUrl = "https://pay.cutilagemrussa.com/checkout-6880/?add-to-cart=6880";
 
@@ -24,20 +25,14 @@ const bonuses = [
   { title: "Modelos de Unhas Decoradas", icon: "fas fa-palette" },
   { title: "30% de desconto em materiais", icon: "fas fa-percentage" },
   { title: "Curso Instagram de Sucesso", icon: "fab fa-instagram" },
-  { title: "SPA dos Pés", icon: "fas fa-spa" },
-  { title: "Manicure e Pedicure", icon: "fas fa-hands" },
-  { title: "Alongamento no Molde F1", icon: "fas fa-magic" },
-  { title: "Alongamento de Unhas de Fibra de Vidro", icon: "fas fa-gem" },
-  { title: "Unhas Decoradas", icon: "fas fa-star" },
 ];
 
-const certificates = [
-  { title: "Certificado Cutilagem Russa", icon: "fas fa-certificate" },
-  { title: "Certificado SPA dos Pés", icon: "fas fa-certificate" },
-  { title: "Certificado Manicure e Pedicure", icon: "fas fa-certificate" },
-  { title: "Certificado Alongamento F1", icon: "fas fa-certificate" },
-  { title: "Certificado Fibra de Vidro", icon: "fas fa-certificate" },
-  { title: "Certificado Unhas Decoradas", icon: "fas fa-certificate" },
+const additionalBonuses = [
+  { title: "SPA DOS PÉS", icon: "fas fa-spa" },
+  { title: "MANICURE E PEDICURE", icon: "fas fa-hands" },
+  { title: "ALONGAMENTO NO MOLDE F1", icon: "fas fa-magic" },
+  { title: "ALONGAMENTO DE UNHAS DE FIBRA DE VIDRO", icon: "fas fa-gem" },
+  { title: "UNHAS DECORADAS", icon: "fas fa-star" },
 ];
 
 export default function Home() {
@@ -57,21 +52,33 @@ export default function Home() {
             </div>
           </AnimatedSection>
 
+          {/* Hero Image - Mobile Only (between banner and title) */}
+          <AnimatedSection delay={200} className="lg:hidden mb-8">
+            <div className="flex justify-center">
+              <img
+                src={heroImage}
+                alt="Cutilagem Russa profissional"
+                className="rounded-xl shadow-2xl w-full max-w-sm h-auto"
+                data-testid="hero-image-mobile"
+              />
+            </div>
+          </AnimatedSection>
+
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <AnimatedSection>
+              <AnimatedSection delay={300}>
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight" data-testid="hero-title">
-                  Curso de <span className="text-primary">Cutilagem Russa</span> Online
+                  Curso de <span className="text-primary">Cutilagem Russa</span> Profissional
                 </h1>
               </AnimatedSection>
               
-              <AnimatedSection delay={200}>
+              <AnimatedSection delay={400}>
                 <h2 className="text-xl md:text-2xl text-muted-foreground font-medium" data-testid="hero-subtitle">
                   Aprenda a técnica que já transformou mais de <span className="text-primary font-bold">23.000 alunas!</span>
                 </h2>
               </AnimatedSection>
               
-              <AnimatedSection delay={400}>
+              <AnimatedSection delay={500}>
                 <p className="text-lg md:text-xl text-muted-foreground" data-testid="hero-description">
                   Conquiste clientes, aumente sua renda e domine a técnica mais valorizada do mercado de manicure.
                 </p>
@@ -91,11 +98,12 @@ export default function Home() {
               </AnimatedSection>
             </div>
 
-            <AnimatedSection delay={800}>
+            {/* Hero Image - Desktop Only */}
+            <AnimatedSection delay={800} className="hidden lg:block">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600"
-                  alt="Manicure profissional com unhas perfeitas"
+                  src={heroImage}
+                  alt="Cutilagem Russa profissional"
                   className="rounded-xl shadow-2xl w-full h-auto"
                   data-testid="hero-image"
                 />
@@ -176,7 +184,7 @@ export default function Home() {
           <AnimatedSection>
             <div className="text-center mb-12">
               <h3 className="text-3xl md:text-4xl font-bold mb-4" data-testid="bonus-title">
-                Você recebe 11 bônus incríveis + 6 certificados
+                Você recebe 6 bônus incríveis
               </h3>
               <p className="text-xl text-primary font-semibold" data-testid="bonus-subtitle">
                 sem pagar nada a mais!
@@ -199,20 +207,39 @@ export default function Home() {
                 </div>
               </AnimatedSection>
             ))}
-            {certificates.map((certificate, index) => (
+          </div>
+        </div>
+      </section>
+
+      {/* ADDITIONAL BONUS SECTION */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <AnimatedSection>
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4" data-testid="additional-bonus-title">
+                Bônus Adicionais: Cursos Exclusivos Completos com Certificado
+              </h3>
+              <p className="text-xl text-primary font-semibold" data-testid="additional-bonus-subtitle">
+                5 cursos profissionais completos inclusos!
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {additionalBonuses.map((bonus, index) => (
               <AnimatedSection
-                key={`certificate-${index}`}
-                delay={(bonuses.length + index) * 100}
+                key={`additional-bonus-${index}`}
+                delay={index * 150}
               >
                 <div
-                  className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 border-2 border-primary/20"
-                  data-testid={`certificate-card-${index}`}
+                  className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 border-2 border-primary/30"
+                  data-testid={`additional-bonus-card-${index}`}
                 >
-                  <i className={`${certificate.icon} text-primary text-2xl mb-3`}></i>
-                  <h4 className="font-bold text-lg mb-2">{certificate.title}</h4>
-                  <div className="text-xs text-primary font-semibold mt-2">
-                    <i className="fas fa-award mr-1"></i>
-                    CERTIFICADO
+                  <i className={`${bonus.icon} text-primary text-3xl mb-4`}></i>
+                  <h4 className="font-bold text-xl mb-3">{bonus.title}</h4>
+                  <div className="text-sm text-primary font-semibold mt-3 bg-primary/10 px-3 py-2 rounded-full">
+                    <i className="fas fa-certificate mr-2"></i>
+                    CURSO COMPLETO + CERTIFICADO
                   </div>
                 </div>
               </AnimatedSection>
