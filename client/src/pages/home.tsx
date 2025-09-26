@@ -79,7 +79,7 @@ export default function Home() {
               </AnimatedSection>
               
               <AnimatedSection delay={500}>
-                <p className="text-lg md:text-xl text-muted-foreground" data-testid="hero-description">
+                <p className="text-lg md:text-xl text-black" data-testid="hero-description">
                   Conquiste clientes, aumente sua renda e domine a técnica mais valorizada do mercado de manicure.
                 </p>
               </AnimatedSection>
