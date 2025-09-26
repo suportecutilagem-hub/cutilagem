@@ -43,7 +43,6 @@ export function TestimonialCarousel() {
       {testimonials.map((testimonial, index) => (
         <AnimatedSection
           key={testimonial.id}
-          delay={index * 200}
           className="bg-card rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
           data-testid={`testimonial-card-${testimonial.id}`}
         >
