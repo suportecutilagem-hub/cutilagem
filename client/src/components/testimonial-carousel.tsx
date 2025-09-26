@@ -1,66 +1,80 @@
 import { useState, useEffect } from "react";
 import { AnimatedSection } from "@/components/ui/animated-section";
 
+// Imagens reais das alunas - referências autênticas em Full HD
+import instagramProfile from "@assets/1-FBEE8-BC-1-ED5-4-F6-C-A233-60-DCF0-CF5866_1758921978541.jpg";
+import testimonial1 from "@assets/IMG_9085_1758921978544.jpg";
+import testimonial2 from "@assets/IMG_9086_1758921978547.jpg";
+import testimonial3 from "@assets/IMG_9088_1758921978549.jpg";
+import testimonial4 from "@assets/IMG_9089_1758921978550.jpg";
+import testimonial5 from "@assets/IMG_9090_1758921978552.jpg";
+import testimonial6 from "@assets/IMG-9091_1758921978553.jpg";
+import testimonial7 from "@assets/IMG-9092_1758921978554.jpg";
+import testimonial8 from "@assets/IMG-9093_1758921978556.jpg";
+import testimonial9 from "@assets/IMG-9094_1758921978558.jpg";
+import testimonial10 from "@assets/IMG-9095_1758921978561.jpg";
+import testimonial11 from "@assets/IMG-9096_1758921978568.jpg";
+
 const studentResults = [
   {
     id: 1,
-    image: "https://i.postimg.cc/qv3YWvYw/IMG_9086.jpg",
-    description: "Cutilagem russa com acabamento profissional e precisão técnica"
+    image: instagramProfile,
+    description: "Nosso perfil oficial com mais de 23.000 alunas transformadas"
   },
   {
     id: 2,
-    image: "https://i.postimg.cc/NfVSNHNL/IMG_9085.jpg",
-    description: "Trabalho refinado demonstrando domínio da técnica ensinada"
+    image: testimonial1,
+    description: "Feedback: 'Estudar nunca é demais' - Aluna aproveitando o curso"
   },
   {
     id: 3,
-    image: "https://i.postimg.cc/CKC2L6wf/IMG_9089.jpg",
-    description: "Aplicação impecável dos fundamentos aprendidos no curso"
+    image: testimonial2,
+    description: "Trabalho refinado demonstrando domínio da técnica ensinada"
   },
   {
     id: 4,
-    image: "https://i.postimg.cc/9XGsmxbH/1-FBEE8-BC-1-ED5-4-F6-C-A233-60-DCF0-CF5866.jpg",
-    description: "Excelência técnica com resultado de padrão profissional"
+    image: testimonial3,
+    description: "Aplicação das brocas diamantadas com técnica correta"
   },
   {
     id: 5,
-    image: "https://i.postimg.cc/MTWFcbG3/IMG_9090.jpg",
-    description: "Cutícula perfeita utilizando a metodologia russa ensinada"
+    image: testimonial4,
+    description: "Aluna compartilhando conhecimento: 'Buscando conhecimento'"
   },
   {
     id: 6,
-    image: "https://i.postimg.cc/hGj1dyBY/IMG-9091.jpg",
-    description: "Demonstração da técnica avançada com precisão e cuidado"
+    image: testimonial5,
+    description: "Remoção de esmalte em gel + Cutilagem Russa - Aula completa"
   },
   {
     id: 7,
-    image: "https://i.postimg.cc/nLPYY4Vh/IMG-9092.jpg",
-    description: "Trabalho profissional evidenciando o aprendizado completo"
+    image: testimonial6,
+    description: "Feedback positivo da aluna Cinthya Lima sobre o curso"
   },
   {
     id: 8,
-    image: "https://i.postimg.cc/XqMftnCM/IMG-9095.jpg",
-    description: "Aplicação magistral da cutilagem russa com acabamento superior"
+    image: testimonial7,
+    description: "Aluna praticando: 'Aprendo depois coloco em prática'"
   },
   {
     id: 9,
-    image: "https://i.postimg.cc/YCt3p2yM/IMG-9093.jpg",
-    description: "Referência de qualidade técnica e profissionalismo"
+    image: testimonial8,
+    description: "Depoimento: 'Ok, muito obrigada. Estou amando o curso'"
   },
   {
     id: 10,
-    image: "https://i.postimg.cc/Z5jL0k13/IMG-9096.jpg",
-    description: "Trabalho exemplar mostrando domínio completo da técnica"
+    image: testimonial9,
+    description: "Feedback da @ccarolpimenta sobre a qualidade do curso"
   },
   {
     id: 11,
-    image: "https://i.postimg.cc/ZRvPfW0F/IMG-9094.jpg",
-    description: "Execução perfeita com atenção aos detalhes profissionais"
+    image: testimonial10,
+    description: "Aluna ansiosa para começar: 'Teremos grandes novidades!'"
   },
   {
     id: 12,
-    image: "https://i.postimg.cc/9fHS2jHh/IMG_9088.jpg",
-    description: "Resultado de excelência técnica e padrão internacional"
+    image: testimonial11,
+    description: "Comentário positivo: 'Eu simplesmente amei o curso, super recomendo'"
   }
 ];
 
@@ -127,7 +141,13 @@ export function TestimonialCarousel() {
                       src={result.image}
                       alt={result.description}
                       className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-300"
-                      style={{ imageRendering: 'crisp-edges', backfaceVisibility: 'hidden', transform: 'translateZ(0)' }}
+                      style={{ 
+                        imageRendering: 'crisp-edges',
+                        backfaceVisibility: 'hidden', 
+                        transform: 'translateZ(0)',
+                        maxWidth: '100%',
+                        height: 'auto'
+                      }}
                       loading="lazy"
                       data-testid={`result-image-${result.id}`}
                     />
