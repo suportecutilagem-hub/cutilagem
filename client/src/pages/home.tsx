@@ -31,6 +31,15 @@ const bonuses = [
   { title: "Unhas Decoradas", icon: "fas fa-star" },
 ];
 
+const certificates = [
+  { title: "Certificado Cutilagem Russa", icon: "fas fa-certificate" },
+  { title: "Certificado SPA dos Pés", icon: "fas fa-certificate" },
+  { title: "Certificado Manicure e Pedicure", icon: "fas fa-certificate" },
+  { title: "Certificado Alongamento F1", icon: "fas fa-certificate" },
+  { title: "Certificado Fibra de Vidro", icon: "fas fa-certificate" },
+  { title: "Certificado Unhas Decoradas", icon: "fas fa-certificate" },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
@@ -178,7 +187,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {bonuses.map((bonus, index) => (
               <AnimatedSection
-                key={index}
+                key={`bonus-${index}`}
                 delay={index * 100}
               >
                 <div
@@ -187,6 +196,24 @@ export default function Home() {
                 >
                   <i className={`${bonus.icon} text-primary text-2xl mb-3`}></i>
                   <h4 className="font-bold text-lg mb-2">{bonus.title}</h4>
+                </div>
+              </AnimatedSection>
+            ))}
+            {certificates.map((certificate, index) => (
+              <AnimatedSection
+                key={`certificate-${index}`}
+                delay={(bonuses.length + index) * 100}
+              >
+                <div
+                  className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 border-2 border-primary/20"
+                  data-testid={`certificate-card-${index}`}
+                >
+                  <i className={`${certificate.icon} text-primary text-2xl mb-3`}></i>
+                  <h4 className="font-bold text-lg mb-2">{certificate.title}</h4>
+                  <div className="text-xs text-primary font-semibold mt-2">
+                    <i className="fas fa-award mr-1"></i>
+                    CERTIFICADO
+                  </div>
                 </div>
               </AnimatedSection>
             ))}
