@@ -91,7 +91,6 @@ export default function Home() {
                     className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition-all duration-300 pulse-border transform hover:scale-105"
                     data-testid="hero-cta-button"
                   >
-                    <i className="fas fa-star mr-2"></i>
                     Garantir Minha Vaga Agora por Apenas R$ 19,90
                   </a>
                 </div>
