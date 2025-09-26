@@ -86,7 +86,7 @@ export function TestimonialCarousel() {
       setCurrentIndex((prevIndex) => 
         (prevIndex + visibleImages) >= studentResults.length ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 5000);
 
     return () => {
       clearInterval(timer);
@@ -139,7 +139,7 @@ export function TestimonialCarousel() {
                   </div>
                   <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs px-3 py-1 rounded-full font-semibold shadow-lg">
                     <i className="fas fa-certificate mr-1"></i>
-                    Portfólio Certificado
+                    Referências
                   </div>
                 </div>
               </AnimatedSection>
