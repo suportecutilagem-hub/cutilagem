@@ -1,0 +1,156 @@
+Quero que você crie uma Landing Page 100% profissional, animada e de altíssima conversão para vender um curso online de Cutilagem Russa.
+
+🎯 Informações principais:
+
+Valor: R$ 19,90 (promoção por tempo limitado).
+
+Apenas 8 vagas disponíveis → precisa aparecer em destaque.
+
+Botão de CTA leva para:
+👉 https://pay.cutilagemrussa.com/checkout-6880/?add-to-cart=6880
+
+O botão deve abrir na mesma aba.
+
+Cores principais: Rose (#BF1E58) e Branco.
+
+Layout responsivo para mobile e desktop.
+
+✍️ Estrutura da página:
+
+1️⃣ HERO (primeira dobra, impacto visual)
+
+Fundo branco com elementos em rose.
+
+Título chamativo:
+"Curso de Cutilagem Russa Online – Aprenda a técnica que já transformou mais de 23.000 alunas!"
+
+Subtítulo:
+"Conquiste clientes, aumente sua renda e domine a técnica mais valorizada do mercado de manicure."
+
+Faixa de escassez (em rose com letras brancas):
+⚠️ Oferta válida por pouco tempo – apenas 8 vagas disponíveis! ⚠️
+
+Botão CTA animado (efeito pulsar ou brilho):
+"Garantir Minha Vaga Agora por Apenas R$ 19,90"
+
+Imagem ilustrativa de manicure/unhas perfeitas.
+
+2️⃣ Seção de preço (com escassez e urgência)
+
+De R$ 297,00 por R$ 19,90.
+
+Texto abaixo: “Oferta especial válida por pouco tempo – últimas 8 vagas disponíveis.”
+
+CTA repetido com animação.
+
+3️⃣ O que você vai aprender (conteúdo do curso)
+Lista animada com check ✅:
+
+Lista de materiais completa
+
+Onde comprar os materiais
+
+Posicionamento com a tesoura
+
+Não machucar a cliente
+
+Remoção de esmalte em gel + Cutilagem Russa
+
+Blindagem e Esterilização
+
+Cutilagem russa com tesoura e brocas
+
+Técnica em 8 minutos
+
+Como usar brocas corretamente
+
+Como precificar seus serviços
+
+Certificado final
+
+4️⃣ Seção de Bônus Exclusivos (animada com zoom-in)
+Título: "Você recebe 11 bônus incríveis + 6 certificados sem pagar nada a mais!"
+
+Bônus inclusos:
+
+Curso Manicure Agenda Cheia
+
+Divulgação no Instagram Oficial
+
+Aula Exclusiva de Esmaltação em Gel
+
+Modelos de Unhas Decoradas
+
+30% de desconto em materiais
+
+Curso Instagram de Sucesso
+
+Bônus adicionais (Cursos completos com certificado):
+
+SPA dos Pés
+
+Manicure e Pedicure
+
+Alongamento no Molde F1
+
+Alongamento de Unhas de Fibra de Vidro
+
+Unhas Decoradas
+
+5️⃣ Depoimentos (com carrossel animado e fotos reais femininas)
+
+3 a 4 depoimentos curtos com imagens reais de mulheres sorrindo (banco de imagens livre).
+
+Exemplos de texto:
+
+“Nunca imaginei que aprenderia tão rápido e com tanta confiança!” – Juliana Santos (RJ).
+
+“O curso mudou minha vida, hoje atendo várias clientes e conquistei minha independência!” – Maria Oliveira (SP).
+
+6️⃣ Seção de Garantia
+
+Texto: "Você estuda no seu ritmo, recebe certificado e conta com suporte exclusivo. Risco zero para você!"
+
+Ícone de selo de garantia.
+
+7️⃣ Seção Final (última chamada com urgência)
+
+Texto forte:
+“⚠️ Restam apenas 8 vagas e o valor promocional de R$ 19,90 é por tempo limitado!
+Mais de 23.000 alunas já transformaram suas carreiras. E você, vai ficar de fora?”
+
+CTA final grande e animado no centro.
+
+🎨 Design e Animações:
+
+Fundo branco, destaques em rose (#BF1E58).
+
+Botões com hover escurecendo o rose.
+
+Faixa de escassez animada (piscando levemente em rose).
+
+Títulos com fade-in.
+
+Itens da lista com slide-in.
+
+Depoimentos em carrossel automático.
+
+CTA com efeito pulsar contínuo.
+
+📱 Responsividade:
+
+Mobile-first.
+
+Grid → colunas únicas no celular.
+
+Depoimentos → carrossel em mobile.
+
+CTA sempre fixo e chamativo.
+
+⚡ Requisitos finais:
+
+Landing Page única, animada e impactante.
+
+Estrutura persuasiva + escassez (8 vagas) + urgência (tempo limitado).
+
+CTA redirecionando sempre na mesma aba.
