@@ -274,10 +274,10 @@ export default function Home() {
           <AnimatedSection>
             <div className="text-center mb-12">
               <h3 className="text-3xl md:text-4xl font-bold mb-4" data-testid="testimonials-title">
-                Resultados Reais das Nossas Alunas
+                Portfólio das Nossas Alunas
               </h3>
               <p className="text-lg text-muted-foreground" data-testid="testimonials-subtitle">
-                Veja os trabalhos incríveis de quem já domina a técnica de cutilagem russa
+                Veja as referências de nossas alunas e os resultados profissionais alcançados após o curso
               </p>
             </div>
           </AnimatedSection>

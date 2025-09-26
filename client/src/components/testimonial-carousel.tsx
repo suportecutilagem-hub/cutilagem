@@ -5,62 +5,62 @@ const studentResults = [
   {
     id: 1,
     image: "https://i.postimg.cc/qv3YWvYw/IMG_9086.jpg",
-    description: "Resultado incrível da técnica de cutilagem russa"
+    description: "Cutilagem russa com acabamento profissional e precisão técnica"
   },
   {
     id: 2,
     image: "https://i.postimg.cc/NfVSNHNL/IMG_9085.jpg",
-    description: "Trabalho profissional de uma de nossas alunas"
+    description: "Trabalho refinado demonstrando domínio da técnica ensinada"
   },
   {
     id: 3,
     image: "https://i.postimg.cc/CKC2L6wf/IMG_9089.jpg",
-    description: "Técnica perfeita aplicada por nossa aluna"
+    description: "Aplicação impecável dos fundamentos aprendidos no curso"
   },
   {
     id: 4,
     image: "https://i.postimg.cc/9XGsmxbH/1-FBEE8-BC-1-ED5-4-F6-C-A233-60-DCF0-CF5866.jpg",
-    description: "Resultado profissional da cutilagem russa"
+    description: "Excelência técnica com resultado de padrão profissional"
   },
   {
     id: 5,
     image: "https://i.postimg.cc/MTWFcbG3/IMG_9090.jpg",
-    description: "Excelência no acabamento e técnica"
+    description: "Cutícula perfeita utilizando a metodologia russa ensinada"
   },
   {
     id: 6,
     image: "https://i.postimg.cc/hGj1dyBY/IMG-9091.jpg",
-    description: "Trabalho de qualidade de nossa estudante"
+    description: "Demonstração da técnica avançada com precisão e cuidado"
   },
   {
     id: 7,
     image: "https://i.postimg.cc/nLPYY4Vh/IMG-9092.jpg",
-    description: "Resultado impecável da técnica aprendida"
+    description: "Trabalho profissional evidenciando o aprendizado completo"
   },
   {
     id: 8,
     image: "https://i.postimg.cc/XqMftnCM/IMG-9095.jpg",
-    description: "Perfeição na aplicação da cutilagem russa"
+    description: "Aplicação magistral da cutilagem russa com acabamento superior"
   },
   {
     id: 9,
     image: "https://i.postimg.cc/YCt3p2yM/IMG-9093.jpg",
-    description: "Trabalho profissional de alta qualidade"
+    description: "Referência de qualidade técnica e profissionalismo"
   },
   {
     id: 10,
     image: "https://i.postimg.cc/Z5jL0k13/IMG-9096.jpg",
-    description: "Resultado excepcional de nossa aluna"
+    description: "Trabalho exemplar mostrando domínio completo da técnica"
   },
   {
     id: 11,
     image: "https://i.postimg.cc/ZRvPfW0F/IMG-9094.jpg",
-    description: "Técnica avançada aplicada com maestria"
+    description: "Execução perfeita com atenção aos detalhes profissionais"
   },
   {
     id: 12,
     image: "https://i.postimg.cc/9fHS2jHh/IMG_9088.jpg",
-    description: "Excelência no resultado final"
+    description: "Resultado de excelência técnica e padrão internacional"
   }
 ];
 
@@ -137,9 +137,9 @@ export function TestimonialCarousel() {
                       </p>
                     </div>
                   </div>
-                  <div className="absolute top-4 right-4 bg-primary text-primary-foreground text-xs px-2 py-1 rounded-full font-bold">
-                    <i className="fas fa-star mr-1"></i>
-                    Resultado Real
+                  <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs px-3 py-1 rounded-full font-semibold shadow-lg">
+                    <i className="fas fa-certificate mr-1"></i>
+                    Portfólio Certificado
                   </div>
                 </div>
               </AnimatedSection>
