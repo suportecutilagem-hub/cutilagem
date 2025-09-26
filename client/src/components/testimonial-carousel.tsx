@@ -135,17 +135,15 @@ export function TestimonialCarousel() {
               style={{ width: `${100 / visibleImages}%` }}
             >
               <AnimatedSection className="group">
-                <div className="relative bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <div className="overflow-hidden">
+                <div className="relative bg-card rounded-xl overflow-hidden shadow-lg md:hover:shadow-2xl transition-all duration-300 md:transform md:hover:scale-105">
+                  <div className="flex justify-center items-center overflow-hidden bg-gray-50 min-h-[250px]">
                     <img
                       src={result.image}
                       alt={result.description}
-                      className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                      className="max-w-full max-h-full h-auto object-contain transition-transform duration-300 md:group-hover:scale-105"
                       style={{ 
-                        imageRendering: 'crisp-edges',
-                        backfaceVisibility: 'hidden', 
-                        transform: 'translateZ(0)',
-                        maxWidth: '100%',
+                        imageRendering: 'auto',
+                        width: 'auto',
                         height: 'auto'
                       }}
                       loading="lazy"
