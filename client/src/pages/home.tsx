@@ -118,15 +118,15 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <AnimatedSection>
             <div className="flex flex-col gap-4 max-w-lg mx-auto">
-              <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap">
+              <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap pulse-border">
                 <i className="fas fa-infinity text-xl animate-pulse"></i>
                 <span>Acesso Vitalício</span>
               </div>
-              <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap">
+              <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap pulse-border">
                 <i className="fas fa-gift text-xl animate-pulse"></i>
                 <span>11 Bônus Exclusivos</span>
               </div>
-              <div className="bg-gradient-to-r from-emerald-500 to-green-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap">
+              <div className="bg-gradient-to-r from-emerald-500 to-green-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap pulse-border">
                 <i className="fas fa-certificate text-xl animate-pulse"></i>
                 <span>6 Certificados Inclusos</span>
               </div>
