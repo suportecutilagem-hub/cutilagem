@@ -1,0 +1,278 @@
+import { AnimatedSection } from "@/components/ui/animated-section";
+import { TestimonialCarousel } from "@/components/testimonial-carousel";
+
+const checkoutUrl = "https://pay.cutilagemrussa.com/checkout-6880/?add-to-cart=6880";
+
+const courseModules = [
+  "Lista de materiais completa",
+  "Onde comprar os materiais",
+  "Posicionamento com a tesoura",
+  "Não machucar a cliente",
+  "Remoção de esmalte em gel + Cutilagem Russa",
+  "Blindagem e Esterilização",
+  "Cutilagem russa com tesoura e brocas",
+  "Técnica em 8 minutos",
+  "Como usar brocas corretamente",
+  "Como precificar seus serviços",
+  "Certificado final",
+];
+
+const bonuses = [
+  { title: "Curso Manicure Agenda Cheia", icon: "fas fa-gift" },
+  { title: "Divulgação no Instagram Oficial", icon: "fab fa-instagram" },
+  { title: "Aula Exclusiva de Esmaltação em Gel", icon: "fas fa-paint-brush" },
+  { title: "Modelos de Unhas Decoradas", icon: "fas fa-palette" },
+  { title: "30% de desconto em materiais", icon: "fas fa-percentage" },
+  { title: "Curso Instagram de Sucesso", icon: "fab fa-instagram" },
+  { title: "SPA dos Pés", icon: "fas fa-spa" },
+  { title: "Manicure e Pedicure", icon: "fas fa-hands" },
+  { title: "Alongamento no Molde F1", icon: "fas fa-magic" },
+  { title: "Alongamento de Unhas de Fibra de Vidro", icon: "fas fa-gem" },
+  { title: "Unhas Decoradas", icon: "fas fa-star" },
+];
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* HERO SECTION */}
+      <section className="relative bg-background py-12 md:py-20 overflow-hidden">
+        <div className="container mx-auto px-4 max-w-6xl">
+          {/* Scarcity Banner */}
+          <AnimatedSection className="mb-8">
+            <div className="bg-primary text-primary-foreground py-3 px-6 rounded-lg text-center animate-blink" data-testid="scarcity-banner">
+              <p className="font-bold text-sm md:text-base">
+                <i className="fas fa-exclamation-triangle mr-2"></i>
+                Oferta válida por pouco tempo – apenas 8 vagas disponíveis!
+                <i className="fas fa-exclamation-triangle ml-2"></i>
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <AnimatedSection>
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight" data-testid="hero-title">
+                  Curso de <span className="text-primary">Cutilagem Russa</span> Online
+                </h1>
+              </AnimatedSection>
+              
+              <AnimatedSection delay={200}>
+                <h2 className="text-xl md:text-2xl text-muted-foreground font-medium" data-testid="hero-subtitle">
+                  Aprenda a técnica que já transformou mais de <span className="text-primary font-bold">23.000 alunas!</span>
+                </h2>
+              </AnimatedSection>
+              
+              <AnimatedSection delay={400}>
+                <p className="text-lg md:text-xl text-muted-foreground" data-testid="hero-description">
+                  Conquiste clientes, aumente sua renda e domine a técnica mais valorizada do mercado de manicure.
+                </p>
+              </AnimatedSection>
+              
+              <AnimatedSection delay={600}>
+                <div className="pt-4">
+                  <a
+                    href={checkoutUrl}
+                    className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition-all duration-300 pulse-border transform hover:scale-105"
+                    data-testid="hero-cta-button"
+                  >
+                    <i className="fas fa-star mr-2"></i>
+                    Garantir Minha Vaga Agora por Apenas R$ 19,90
+                  </a>
+                </div>
+              </AnimatedSection>
+            </div>
+
+            <AnimatedSection delay={800}>
+              <div>
+                <img
+                  src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600"
+                  alt="Manicure profissional com unhas perfeitas"
+                  className="rounded-xl shadow-2xl w-full h-auto"
+                  data-testid="hero-image"
+                />
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* PRICING SECTION */}
+      <section className="bg-secondary py-16">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <AnimatedSection>
+            <div className="bg-card rounded-xl shadow-lg p-8 md:p-12" data-testid="pricing-section">
+              <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="pricing-title">
+                Oferta Especial por Tempo Limitado
+              </h3>
+              
+              <div className="space-y-4 mb-8">
+                <p className="text-3xl md:text-4xl text-muted-foreground line-through" data-testid="original-price">
+                  De R$ 297,00
+                </p>
+                <p className="text-5xl md:text-7xl font-bold text-primary" data-testid="promotional-price">
+                  R$ 19,90
+                </p>
+                <p className="text-lg text-muted-foreground" data-testid="pricing-description">
+                  Oferta especial válida por pouco tempo – últimas 8 vagas disponíveis.
+                </p>
+              </div>
+
+              <a
+                href={checkoutUrl}
+                className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition-all duration-300 pulse-border transform hover:scale-105"
+                data-testid="pricing-cta-button"
+              >
+                <i className="fas fa-shopping-cart mr-2"></i>
+                Aproveitar Esta Oferta Agora
+              </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* COURSE CONTENT SECTION */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <AnimatedSection>
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4" data-testid="course-content-title">
+                O que você vai aprender
+              </h3>
+              <p className="text-lg text-muted-foreground" data-testid="course-content-subtitle">
+                Conteúdo completo e atualizado para sua transformação profissional
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {courseModules.map((module, index) => (
+              <AnimatedSection
+                key={index}
+                animationType="slide-in"
+                delay={index * 100}
+              >
+                <div className="flex items-start space-x-3" data-testid={`course-module-${index}`}>
+                  <i className="fas fa-check-circle text-primary text-xl mt-1"></i>
+                  <span className="text-lg">{module}</span>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BONUS SECTION */}
+      <section className="py-16 bg-secondary">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <AnimatedSection>
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4" data-testid="bonus-title">
+                Você recebe 11 bônus incríveis + 6 certificados
+              </h3>
+              <p className="text-xl text-primary font-semibold" data-testid="bonus-subtitle">
+                sem pagar nada a mais!
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {bonuses.map((bonus, index) => (
+              <AnimatedSection
+                key={index}
+                delay={index * 100}
+              >
+                <div
+                  className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                  data-testid={`bonus-card-${index}`}
+                >
+                  <i className={`${bonus.icon} text-primary text-2xl mb-3`}></i>
+                  <h4 className="font-bold text-lg mb-2">{bonus.title}</h4>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS SECTION */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <AnimatedSection>
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4" data-testid="testimonials-title">
+                O que nossas alunas dizem
+              </h3>
+              <p className="text-lg text-muted-foreground" data-testid="testimonials-subtitle">
+                Mais de 23.000 mulheres já transformaram suas vidas
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <TestimonialCarousel />
+        </div>
+      </section>
+
+      {/* GUARANTEE SECTION */}
+      <section className="py-16 bg-secondary">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <AnimatedSection>
+            <div className="bg-card rounded-xl p-8 md:p-12 shadow-lg" data-testid="guarantee-section">
+              <div className="mb-6">
+                <i className="fas fa-shield-alt text-green-500 text-6xl mb-4"></i>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="guarantee-title">
+                Garantia Total
+              </h3>
+              <p className="text-lg text-muted-foreground mb-6" data-testid="guarantee-description">
+                Você estuda no seu ritmo, recebe certificado e conta com suporte exclusivo.{" "}
+                <span className="font-bold text-primary">Risco zero para você!</span>
+              </p>
+              <div className="flex justify-center items-center space-x-4 text-green-500">
+                <i className="fas fa-check-circle text-2xl"></i>
+                <span className="text-lg font-semibold">100% Seguro e Confiável</span>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* FINAL URGENCY SECTION */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <AnimatedSection>
+            <div className="space-y-8" data-testid="final-urgency-section">
+              <div className="bg-primary text-primary-foreground py-6 px-8 rounded-xl">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4" data-testid="final-urgency-title">
+                  <i className="fas fa-exclamation-triangle mr-2"></i>
+                  Últimas 8 Vagas Disponíveis!
+                </h3>
+                <p className="text-lg md:text-xl" data-testid="final-urgency-description">
+                  Restam apenas 8 vagas e o valor promocional de R$ 19,90 é por tempo limitado!<br />
+                  <span className="font-bold">
+                    Mais de 23.000 alunas já transformaram suas carreiras. E você, vai ficar de fora?
+                  </span>
+                </p>
+              </div>
+
+              <div className="pt-4">
+                <a
+                  href={checkoutUrl}
+                  className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-12 rounded-lg text-xl md:text-2xl transition-all duration-300 pulse-border transform hover:scale-105"
+                  data-testid="final-cta-button"
+                >
+                  <i className="fas fa-rocket mr-3"></i>
+                  QUERO GARANTIR MINHA VAGA AGORA!
+                  <div className="text-sm mt-2 opacity-90">Por apenas R$ 19,90</div>
+                </a>
+              </div>
+
+              <p className="text-sm text-muted-foreground" data-testid="security-note">
+                Processamento 100% seguro • Acesso imediato após a compra
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+    </div>
+  );
+}
