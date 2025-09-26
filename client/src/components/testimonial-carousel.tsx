@@ -126,7 +126,9 @@ export function TestimonialCarousel() {
                     <img
                       src={result.image}
                       alt={result.description}
-                      className="w-full h-auto object-contain group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                      style={{ imageRendering: 'crisp-edges', backfaceVisibility: 'hidden', transform: 'translateZ(0)' }}
+                      loading="lazy"
                       data-testid={`result-image-${result.id}`}
                     />
                   </div>
