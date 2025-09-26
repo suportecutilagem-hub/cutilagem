@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* HIGHLIGHT SECTION */}
-      <section className="py-8 bg-gradient-to-r from-primary/5 to-secondary/5">
+      <section className="py-4 md:py-8 bg-gradient-to-r from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4 text-center">
           <AnimatedSection>
             <div className="flex flex-col gap-4 max-w-lg mx-auto">
