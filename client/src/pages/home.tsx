@@ -53,16 +53,19 @@ export default function Home() {
           </AnimatedSection>
 
           {/* Hero Image - Mobile Only (between banner and title) */}
-          <AnimatedSection className="lg:hidden mb-8">
+          <div className="lg:hidden mb-8">
             <div className="flex justify-center">
               <img
                 src={heroImage}
                 alt="Cutilagem Russa profissional"
                 className="rounded-xl shadow-2xl w-full max-w-sm h-auto"
                 data-testid="hero-image-mobile"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
-          </AnimatedSection>
+          </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -99,16 +102,19 @@ export default function Home() {
             </div>
 
             {/* Hero Image - Desktop Only */}
-            <AnimatedSection className="hidden lg:block">
+            <div className="hidden lg:block">
               <div>
                 <img
                   src={heroImage}
                   alt="Cutilagem Russa profissional"
                   className="rounded-xl shadow-2xl w-full h-auto"
                   data-testid="hero-image"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
                 />
               </div>
-            </AnimatedSection>
+            </div>
           </div>
         </div>
       </section>
