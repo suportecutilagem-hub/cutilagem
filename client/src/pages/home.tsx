@@ -1,6 +1,6 @@
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { TestimonialCarousel } from "@/components/testimonial-carousel";
-import heroImage from "@assets/image_1758908203040.png";
+import heroImage from "@assets/image_1758982512585.png";
 
 const checkoutUrl = "https://pay.cutilagemrussa.com/checkout-6880/?add-to-cart=6880";
 
