@@ -314,7 +314,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ SECTION */}
+      {/* FINAL URGENCY SECTION */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4 max-w-4xl text-center">
+          <AnimatedSection>
+            <div className="space-y-8" data-testid="final-urgency-section">
+              <div className="bg-primary text-primary-foreground py-6 px-8 rounded-xl">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4" data-testid="final-urgency-title">
+                  <i className="fas fa-exclamation-triangle mr-2"></i>
+                  Últimas 8 Vagas Disponíveis!
+                </h3>
+                <p className="text-lg md:text-xl" data-testid="final-urgency-description">
+                  Restam apenas 8 vagas e o valor promocional de R$ 35,00 é por tempo limitado!<br />
+                  <span className="font-bold">
+                    Mais de 23.000 alunas já transformaram suas carreiras. E você, vai ficar de fora?
+                  </span>
+                </p>
+              </div>
+
+              <div className="pt-4">
+                <a
+                  href={checkoutUrl}
+                  className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-12 rounded-lg text-xl md:text-2xl transition-all duration-300 pulse-border transform hover:scale-105"
+                  data-testid="final-cta-button"
+                >
+                  <i className="fas fa-rocket mr-3"></i>
+                  QUERO GARANTIR MINHA VAGA AGORA!
+                  <div className="text-sm mt-2 opacity-90">Por apenas R$ 35,00</div>
+                </a>
+              </div>
+
+              <p className="text-sm text-muted-foreground" data-testid="security-note">
+                Processamento 100% seguro • Acesso imediato após a compra
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* FAQ FOOTER SECTION */}
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4 max-w-4xl">
           <AnimatedSection>
@@ -393,10 +431,10 @@ export default function Home() {
               <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-6">
                 <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
                   <i className="fas fa-question-circle text-primary mr-2"></i>
-                  Há garantia de satisfação?
+                  São vídeo aulas?
                 </summary>
                 <div className="mt-4 text-muted-foreground">
-                  Sim! Oferecemos garantia total. Você pode estudar com tranquilidade, sabendo que está fazendo um investimento seguro e confiável.
+                  Sim! Todas as aulas e bônus são em vídeo aulas. Conteúdo 100% em vídeo para você aprender de forma prática e visual.
                 </div>
               </details>
             </AnimatedSection>
@@ -412,18 +450,6 @@ export default function Home() {
                 </div>
               </details>
             </AnimatedSection>
-
-            <AnimatedSection>
-              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-8">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
-                  <i className="fas fa-question-circle text-primary mr-2"></i>
-                  Quanto tempo demora para aprender?
-                </summary>
-                <div className="mt-4 text-muted-foreground">
-                  O curso ensina a técnica completa, incluindo como fazer a cutilagem russa em apenas 8 minutos! Você pode aprender no seu ritmo.
-                </div>
-              </details>
-            </AnimatedSection>
           </div>
 
           <AnimatedSection>
@@ -431,48 +457,13 @@ export default function Home() {
               <a
                 href={checkoutUrl}
                 className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition-all duration-300 pulse-border transform hover:scale-105"
-                data-testid="faq-cta-button"
+                data-testid="faq-footer-cta-button"
               >
                 <i className="fas fa-shopping-cart mr-2"></i>
-                Garanta Sua Vaga Agora por R$ 35,00
+                Garantir Minha Vaga Agora por R$ 35,00
               </a>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* FINAL URGENCY SECTION */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <AnimatedSection>
-            <div className="space-y-8" data-testid="final-urgency-section">
-              <div className="bg-primary text-primary-foreground py-6 px-8 rounded-xl">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4" data-testid="final-urgency-title">
-                  <i className="fas fa-exclamation-triangle mr-2"></i>
-                  Últimas 8 Vagas Disponíveis!
-                </h3>
-                <p className="text-lg md:text-xl" data-testid="final-urgency-description">
-                  Restam apenas 8 vagas e o valor promocional de R$ 35,00 é por tempo limitado!<br />
-                  <span className="font-bold">
-                    Mais de 23.000 alunas já transformaram suas carreiras. E você, vai ficar de fora?
-                  </span>
-                </p>
-              </div>
-
-              <div className="pt-4">
-                <a
-                  href={checkoutUrl}
-                  className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-12 rounded-lg text-xl md:text-2xl transition-all duration-300 pulse-border transform hover:scale-105"
-                  data-testid="final-cta-button"
-                >
-                  <i className="fas fa-rocket mr-3"></i>
-                  QUERO GARANTIR MINHA VAGA AGORA!
-                  <div className="text-sm mt-2 opacity-90">Por apenas R$ 35,00</div>
-                </a>
-              </div>
-
-              <p className="text-sm text-muted-foreground" data-testid="security-note">
-                Processamento 100% seguro • Acesso imediato após a compra
+              <p className="text-sm text-muted-foreground mt-4">
+                Últimas 8 vagas disponíveis • Oferta por tempo limitado
               </p>
             </div>
           </AnimatedSection>
