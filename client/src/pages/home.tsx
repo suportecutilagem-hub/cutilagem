@@ -151,7 +151,7 @@ export default function Home() {
                 <p className="text-5xl md:text-7xl font-bold text-primary" data-testid="promotional-price">
                   R$ 19,90
                 </p>
-                <p className="text-lg text-black" data-testid="pricing-description">
+                <p className="text-lg text-muted-foreground" data-testid="pricing-description">
                   Oferta especial válida por pouco tempo – últimas 8 vagas disponíveis.
                 </p>
               </div>
