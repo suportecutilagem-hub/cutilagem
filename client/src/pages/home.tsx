@@ -314,6 +314,133 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ SECTION */}
+      <section className="py-16 bg-secondary">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <AnimatedSection>
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4" data-testid="faq-title">
+                Perguntas Frequentes
+              </h3>
+              <p className="text-lg text-muted-foreground" data-testid="faq-subtitle">
+                Tire suas dúvidas sobre o curso
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="space-y-4">
+            <AnimatedSection>
+              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-1">
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
+                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                  Por quanto tempo terei acesso ao curso?
+                </summary>
+                <div className="mt-4 text-muted-foreground">
+                  Você terá acesso vitalício ao curso! Poderá assistir quantas vezes quiser, no seu próprio ritmo, sem pressa.
+                </div>
+              </details>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-2">
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
+                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                  Vou receber certificado?
+                </summary>
+                <div className="mt-4 text-muted-foreground">
+                  Sim! Você receberá 6 certificados: Cutilagem Russa + 5 cursos bônus completos. Todos os certificados são válidos e reconhecidos.
+                </div>
+              </details>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-3">
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
+                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                  Preciso ter experiência prévia?
+                </summary>
+                <div className="mt-4 text-muted-foreground">
+                  Não! O curso é completo e foi desenvolvido tanto para iniciantes quanto para profissionais que querem aperfeiçoar a técnica.
+                </div>
+              </details>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-4">
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
+                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                  Quais materiais preciso ter?
+                </summary>
+                <div className="mt-4 text-muted-foreground">
+                  O curso inclui uma lista completa de materiais e onde comprá-los. Além disso, você ganha 30% de desconto na compra dos materiais!
+                </div>
+              </details>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-5">
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
+                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                  Como funciona o acesso?
+                </summary>
+                <div className="mt-4 text-muted-foreground">
+                  Após a compra, você receberá o acesso imediatamente no seu e-mail. O curso fica disponível 24h por dia na nossa plataforma.
+                </div>
+              </details>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-6">
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
+                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                  Há garantia de satisfação?
+                </summary>
+                <div className="mt-4 text-muted-foreground">
+                  Sim! Oferecemos garantia total. Você pode estudar com tranquilidade, sabendo que está fazendo um investimento seguro e confiável.
+                </div>
+              </details>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-7">
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
+                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                  Posso assistir pelo celular?
+                </summary>
+                <div className="mt-4 text-muted-foreground">
+                  Claro! O curso pode ser acessado de qualquer dispositivo: celular, tablet ou computador. Estude onde e quando quiser!
+                </div>
+              </details>
+            </AnimatedSection>
+
+            <AnimatedSection>
+              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-8">
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
+                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                  Quanto tempo demora para aprender?
+                </summary>
+                <div className="mt-4 text-muted-foreground">
+                  O curso ensina a técnica completa, incluindo como fazer a cutilagem russa em apenas 8 minutos! Você pode aprender no seu ritmo.
+                </div>
+              </details>
+            </AnimatedSection>
+          </div>
+
+          <AnimatedSection>
+            <div className="text-center mt-12">
+              <a
+                href={checkoutUrl}
+                className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition-all duration-300 pulse-border transform hover:scale-105"
+                data-testid="faq-cta-button"
+              >
+                <i className="fas fa-shopping-cart mr-2"></i>
+                Garanta Sua Vaga Agora por R$ 35,00
+              </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* FINAL URGENCY SECTION */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 max-w-4xl text-center">
