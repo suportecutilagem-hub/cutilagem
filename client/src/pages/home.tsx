@@ -201,7 +201,7 @@ export default function Home() {
                     <h4 className="font-semibold mb-4 text-lg">11 Bônus Exclusivos:</h4>
                     <p className="text-gray-600 mb-2">• 5 Cursos Populares e Atualizados</p>
                     <p className="text-gray-600 mb-2">• Todos com Certificado</p>
-                    <p className="text-gray-600 mb-2">• + 6 bonus exclusivos</p>
+                    <p className="text-gray-600 mb-2">• + 6 Bônus exclusivos</p>
                     <p className="text-right font-bold text-primary">R$ 1.247,00</p>
                   </div>
                 </div>
