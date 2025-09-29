@@ -339,19 +339,6 @@ export default function Home() {
               </AnimatedSection>
             ))}
           </div>
-
-          {/* CTA após módulos do curso */}
-          <AnimatedSection>
-            <div className="text-center mt-12">
-              <a
-                href={checkoutUrl}
-                className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 cta-pulse"
-                data-testid="cta-after-modules"
-              >
-                Quero Aprender Tudo Isso por R$ 19,90
-              </a>
-            </div>
-          </AnimatedSection>
         </div>
       </section>
 
@@ -465,19 +452,6 @@ export default function Home() {
           </AnimatedSection>
 
           <TestimonialCarousel />
-
-          {/* CTA após testemunhos */}
-          <AnimatedSection>
-            <div className="text-center mt-12">
-              <a
-                href={checkoutUrl}
-                className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-5 px-10 rounded-lg text-xl transition-all duration-200 cta-pulse"
-                data-testid="cta-after-testimonials"
-              >
-                Quero Me Juntar às 23.000 Profissionais!
-              </a>
-            </div>
-          </AnimatedSection>
         </div>
       </section>
 
