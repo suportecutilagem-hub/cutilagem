@@ -148,17 +148,17 @@
 
   .cta-pulse {
     animation: ctaPulse 2s ease-in-out infinite;
-    box-shadow: 0 4px 14px 0 rgba(191, 30, 88, 0.39);
+    box-shadow: 0 8px 25px 0 rgba(191, 30, 88, 0.45);
   }
 
   @keyframes ctaPulse {
     0%, 100% {
       transform: scale(1);
-      box-shadow: 0 4px 14px 0 rgba(191, 30, 88, 0.39);
+      box-shadow: 0 8px 25px 0 rgba(191, 30, 88, 0.45);
     }
     50% {
-      transform: scale(1.02);
-      box-shadow: 0 6px 20px 0 rgba(191, 30, 88, 0.5);
+      transform: scale(1.03);
+      box-shadow: 0 12px 35px 0 rgba(191, 30, 88, 0.6);
     }
   }
 

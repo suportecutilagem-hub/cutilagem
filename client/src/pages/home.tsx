@@ -113,7 +113,7 @@ export default function Home() {
                   
                   <a
                     href={checkoutUrl}
-                    className="block w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-6 rounded-lg text-lg text-center transition-all duration-200 cta-pulse"
+                    className="block w-full bg-primary hover:bg-primary/90 text-white font-bold py-5 px-6 rounded-lg text-xl text-center transition-all duration-200 cta-pulse"
                     data-testid="main-cta"
                   >
                     Quero Aprender Agora por R$ 19,90
@@ -210,9 +210,12 @@ export default function Home() {
                     <span className="text-xl font-bold">Valor Total:</span>
                     <span className="text-2xl font-bold text-gray-500 line-through">R$ 1.544,00</span>
                   </div>
-                  <div className="flex justify-between items-center mb-6">
+                  <div className="flex justify-between items-baseline mb-6">
                     <span className="text-2xl font-bold text-primary">Você paga hoje:</span>
-                    <span className="text-4xl font-bold text-primary">R$ 19,90</span>
+                    <div className="flex items-baseline">
+                      <span className="text-2xl font-bold text-primary">R$</span>
+                      <span className="text-4xl font-bold text-primary ml-1">19,90</span>
+                    </div>
                   </div>
                   <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                     <p className="text-center text-red-700 font-semibold">
@@ -351,8 +354,12 @@ export default function Home() {
                     className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                     data-testid={`bonus-card-${index}`}
                   >
-                    <IconComponent className="w-8 h-8 text-primary mb-3 mx-auto" />
-                    <h4 className="font-bold text-lg mb-2">{bonus.title}</h4>
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                        <IconComponent className="w-7 h-7 text-primary" strokeWidth={2.5} />
+                      </div>
+                      <h4 className="font-bold text-lg flex-1 pt-2">{bonus.title}</h4>
+                    </div>
                   </div>
                 </AnimatedSection>
               );
@@ -381,14 +388,14 @@ export default function Home() {
                 key={`additional-bonus-${index}`}
               >
                 <div
-                  className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 border-2 border-primary/30"
+                  className="bg-card rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-primary/30"
                   data-testid={`additional-bonus-card-${index}`}
                 >
-                  <div className="flex items-center gap-2 mb-3">
+                  <h4 className="font-bold text-xl mb-4">{bonus.title}</h4>
+                  <div className="flex items-center gap-2 pt-3 border-t border-gray-100">
                     <Award className="w-5 h-5 text-primary" />
                     <span className="text-xs text-primary font-semibold">CERTIFICADO</span>
                   </div>
-                  <h4 className="font-bold text-xl">{bonus.title}</h4>
                 </div>
               </AnimatedSection>
             ))}
@@ -474,7 +481,7 @@ export default function Home() {
                 </div>
                 <a
                   href={checkoutUrl}
-                  className="inline-block w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-lg text-sm text-center transition-all duration-200 cta-pulse mt-3"
+                  className="inline-block w-full bg-primary hover:bg-primary/90 text-white font-bold py-5 px-6 rounded-lg text-xl text-center transition-all duration-200 cta-pulse mt-3"
                   data-testid="final-message-cta"
                 >
                   Garantir Minha Vaga Agora
@@ -599,7 +606,7 @@ export default function Home() {
               </p>
               <a
                 href={checkoutUrl}
-                className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg text-center transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-5 px-6 rounded-lg text-xl text-center transition-all duration-200 cta-pulse"
                 data-testid="faq-cta-button"
               >
                 Garantir Minha Vaga por R$ 19,90
