@@ -256,7 +256,7 @@ export default function Home() {
                     <CheckCircle className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Menos Dor para a Cliente</h4>
+                    <h4 className="font-semibold mb-2">Zero Dor ou Risco para as Clientes</h4>
                     <p className="text-gray-600">Técnica mais delicada e menos invasiva</p>
                   </div>
                 </div>
