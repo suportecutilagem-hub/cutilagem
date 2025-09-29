@@ -2,7 +2,9 @@
 
 ## Overview
 
-This is a Brazilian Portuguese landing page for an online Russian manicure course ("Cutilagem Russa"). The application is built as a modern full-stack web application using React with TypeScript for the frontend and Express.js for the backend. The landing page is designed to be a high-conversion sales page with animated elements, testimonials, and strong call-to-action buttons directing users to a checkout URL. The page emphasizes scarcity marketing (only 8 spots available) and promotional pricing (R$ 35.00 instead of R$ 297.00).
+This is a Brazilian Portuguese landing page for an online Russian manicure course ("Cutilagem Russa"). The application is built as a modern full-stack web application using React with TypeScript for the frontend and Express.js for the backend. The landing page is designed to be a high-conversion sales page with animated elements, testimonials, and strong call-to-action buttons directing users to a checkout URL. The page emphasizes scarcity marketing (only 8 spots available) and promotional pricing (R$ 19.90 instead of R$ 297.00).
+
+**Status**: Successfully imported and configured for Replit environment (September 29, 2025)
 
 ## User Preferences
 
@@ -44,6 +46,14 @@ Preferred communication style: Simple, everyday language.
 - **Build Process**: Vite for frontend bundling, esbuild for backend compilation
 - **Development**: Concurrent development server with hot reloading
 - **Production**: Optimized builds with static asset serving
+
+### Replit Environment Setup
+- **Port Configuration**: Application runs on port 5000 (mapped to external port 80)
+- **Host Configuration**: Server configured to bind to 0.0.0.0 for Replit proxy compatibility
+- **Vite Proxy**: Configured with `allowedHosts: true` for iframe preview support
+- **Workflow**: "Start application" workflow configured with `npm run dev` on port 5000
+- **Deployment**: Autoscale deployment configured with proper build and run scripts
+- **Node.js Version**: Node.js 20 module installed
 
 ## External Dependencies
 
