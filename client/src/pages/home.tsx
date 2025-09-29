@@ -71,32 +71,52 @@ export default function Home() {
             <div className="space-y-6">
               <AnimatedSection>
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight" data-testid="hero-title">
-                  Curso de <span className="text-primary">Cutilagem Russa</span> Profissional
+                  <span className="text-primary">CUTILAGEM RUSSA PROFISSIONAL:</span><br/>
+                  <span className="text-black">Transforme sua Carreira em 8 Minutos!</span>
                 </h1>
               </AnimatedSection>
               
               <AnimatedSection>
-                <h2 className="text-xl md:text-2xl text-muted-foreground font-medium" data-testid="hero-subtitle">
-                  Aprenda a técnica que já transformou mais de <span className="text-primary font-bold">23.000 alunas!</span>
+                <h2 className="text-xl md:text-2xl text-foreground font-bold" data-testid="hero-subtitle">
+                  🎯 <span className="text-primary">FATURE R$ 2.000+ POR MÊS</span> dominando a técnica mais procurada por clientes VIP
                 </h2>
               </AnimatedSection>
               
               <AnimatedSection>
-                <p className="text-lg md:text-xl text-black" data-testid="hero-description">
-                  Conquiste clientes, aumente sua renda e domine a técnica mais valorizada do mercado de manicure.
-                </p>
+                <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-4 rounded-lg" data-testid="hero-value-proposition">
+                  <p className="text-lg md:text-xl text-green-800 font-semibold">
+                    ✅ <strong>Método comprovado</strong> que já transformou <span className="text-primary font-bold">23.000+ manicures</span><br/>
+                    ✅ <strong>Aprenda em casa</strong> com certificado profissional reconhecido<br/>
+                    ✅ <strong>Suporte vitalício</strong> + 11 bônus exclusivos inclusos
+                  </p>
+                </div>
               </AnimatedSection>
               
               <AnimatedSection>
-                <div className="pt-4">
-                  <a
-                    href={checkoutUrl}
-                    className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition-all duration-300 pulse-border transform hover:scale-105"
-                    data-testid="hero-cta-button"
-                  >
-                    <i className="fas fa-shopping-cart mr-2"></i>
-                    Garantir Minha Vaga Agora por Apenas R$ 35,00
-                  </a>
+                <div className="pt-6">
+                  <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-6 rounded-xl border-4 border-yellow-400 shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <div className="text-center">
+                      <div className="text-sm font-bold mb-2 text-yellow-300">
+                        🔥 PROMOÇÃO RELÂMPAGO - ÚLTIMAS 8 VAGAS! 🔥
+                      </div>
+                      <div className="text-4xl md:text-5xl font-black mb-2">
+                        <span className="line-through text-gray-300 text-2xl">R$ 297</span>
+                        <span className="text-yellow-300 ml-2">R$ 35</span>
+                      </div>
+                      <div className="text-sm mb-4 text-red-100">
+                        Economia de R$ 262,00 • Desconto de 88%
+                      </div>
+                      <a
+                        href={checkoutUrl}
+                        className="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-black py-4 px-8 rounded-full text-lg md:text-xl transition-all duration-300 animate-pulse shadow-lg border-2 border-white transform hover:scale-110"
+                        data-testid="hero-cta-button"
+                      >
+                        <i className="fas fa-rocket mr-2"></i>
+                        QUERO GARANTIR MINHA VAGA AGORA!
+                        <div className="text-sm font-normal mt-1">💳 Acesso Imediato • 100% Seguro</div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </AnimatedSection>
             </div>
