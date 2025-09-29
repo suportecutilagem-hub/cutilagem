@@ -95,7 +95,7 @@ export default function Home() {
                     data-testid="hero-cta-button"
                   >
                     <i className="fas fa-shopping-cart mr-2"></i>
-                    Garantir Minha Vaga Agora por Apenas R$ 19,90
+                    Garantir Minha Vaga Agora por Apenas R$ 35,00
                   </a>
                 </div>
               </AnimatedSection>
@@ -155,7 +155,7 @@ export default function Home() {
                   De R$ 297,00
                 </p>
                 <p className="text-5xl md:text-7xl font-bold text-primary" data-testid="promotional-price">
-                  R$ 19,90
+                  R$ 35,00
                 </p>
                 <p className="text-lg text-muted-foreground" data-testid="pricing-description">
                   Oferta especial válida por pouco tempo – últimas 8 vagas disponíveis.
@@ -331,7 +331,7 @@ export default function Home() {
                   Últimas 8 Vagas Disponíveis!
                 </h3>
                 <p className="text-lg md:text-xl" data-testid="final-urgency-description">
-                  Restam apenas 8 vagas e o valor promocional de R$ 19,90 é por tempo limitado!<br />
+                  Restam apenas 8 vagas e o valor promocional de R$ 35,00 é por tempo limitado!<br />
                   <span className="font-bold">
                     Mais de 23.000 alunas já transformaram suas carreiras. E você, vai ficar de fora?
                   </span>
@@ -346,7 +346,7 @@ export default function Home() {
                 >
                   <i className="fas fa-rocket mr-3"></i>
                   QUERO GARANTIR MINHA VAGA AGORA!
-                  <div className="text-sm mt-2 opacity-90">Por apenas R$ 19,90</div>
+                  <div className="text-sm mt-2 opacity-90">Por apenas R$ 35,00</div>
                 </a>
               </div>
 
@@ -466,7 +466,7 @@ export default function Home() {
                 data-testid="faq-footer-cta-button"
               >
                 <i className="fas fa-shopping-cart mr-2"></i>
-                Garantir Minha Vaga Agora por R$ 19,90
+                Garantir Minha Vaga Agora por R$ 35,00
               </a>
               <p className="text-sm text-muted-foreground mt-4">
                 Últimas 8 vagas disponíveis • Oferta por tempo limitado
