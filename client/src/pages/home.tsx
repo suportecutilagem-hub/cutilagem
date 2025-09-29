@@ -1,5 +1,6 @@
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { TestimonialCarousel } from "@/components/testimonial-carousel";
+import { Shield, Clock, Users, Award, CheckCircle, Star, TrendingUp, HelpCircle, PlayCircle, BookOpen, Sparkles } from "lucide-react";
 import heroImage from "@assets/image_1758982671326.png";
 
 const checkoutUrl = "https://pay.cutilagemrussa.com/checkout-6880/?add-to-cart=6880";
@@ -41,27 +42,24 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className="relative bg-background py-12 md:py-20 overflow-hidden">
         <div className="container mx-auto px-4 max-w-6xl">
-          {/* Scarcity Banner */}
+          {/* Subtle urgency banner */}
           <AnimatedSection className="mb-8">
-            <div className="bg-primary text-primary-foreground py-3 px-6 rounded-lg text-center animate-blink" data-testid="scarcity-banner">
-              <p className="font-bold text-sm md:text-base">
-                <i className="fas fa-exclamation-triangle mr-2"></i>
-                Oferta válida por pouco tempo – apenas 8 vagas disponíveis!
-                <i className="fas fa-exclamation-triangle ml-2"></i>
+            <div className="bg-amber-50 border border-amber-200 text-amber-800 py-2 px-4 rounded-lg text-center" data-testid="urgency-banner">
+              <p className="text-sm font-medium">
+                ⚡ Promoção especial: últimas vagas disponíveis
               </p>
             </div>
           </AnimatedSection>
 
-          {/* Hero Image - Mobile Only (between banner and title) */}
+          {/* Hero Image - Mobile Only */}
           <div className="lg:hidden mb-8">
             <div className="flex justify-center">
               <img
                 src={heroImage}
-                alt="Cutilagem Russa profissional"
-                className="rounded-xl shadow-2xl w-full max-w-sm h-auto"
+                alt="Curso de Cutilagem Russa - Manicure profissional"
+                className="rounded-xl shadow-lg w-full max-w-sm h-auto"
                 data-testid="hero-image-mobile"
                 loading="eager"
-                decoding="async"
               />
             </div>
           </div>
@@ -70,156 +68,260 @@ export default function Home() {
             <div className="space-y-6">
               <AnimatedSection>
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight" data-testid="hero-title">
-                  Domine a <span className="text-primary">Cutilagem Russa</span> e
-                  <span className="block mt-2">Transforme sua Carreira</span>
+                  <span className="text-primary">Cutilagem Russa:</span> A Técnica que 
+                  <span className="block">Multiplica sua Renda</span>
                 </h1>
               </AnimatedSection>
               
               <AnimatedSection>
                 <h2 className="text-xl md:text-2xl text-muted-foreground font-medium" data-testid="hero-subtitle">
-                  A técnica mais valorizada pelas clientes VIP que já transformou
-                  <span className="text-primary font-bold"> mais de 23.000 profissionais</span>
+                  Aprenda o método que faz suas clientes pagarem <strong className="text-primary">até 3x mais</strong> pelos seus serviços
                 </h2>
               </AnimatedSection>
               
               <AnimatedSection>
-                <div className="bg-card border-l-4 border-primary p-6 rounded-lg shadow-sm" data-testid="hero-value-proposition">
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <p className="text-lg">Método profissional com resultados em <strong>8 minutos</strong></p>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <p className="text-lg">Certificado reconhecido + <strong>11 bônus exclusivos</strong></p>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <p className="text-lg">Acesso vitalício + suporte especializado</p>
-                    </div>
+                <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 p-6 rounded-lg" data-testid="social-proof">
+                  <div className="flex items-center space-x-2 mb-3">
+                    <Users className="w-5 h-5 text-green-600" />
+                    <span className="text-green-800 font-semibold">Mais de 23.000 manicures certificadas</span>
+                  </div>
+                  <div className="flex items-center space-x-2 mb-3">
+                    <TrendingUp className="w-5 h-5 text-green-600" />
+                    <span className="text-green-800 font-semibold">Faturamento médio: R$ 2.500/mês a mais</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Award className="w-5 h-5 text-green-600" />
+                    <span className="text-green-800 font-semibold">Certificado profissional reconhecido</span>
                   </div>
                 </div>
               </AnimatedSection>
-              
+
               <AnimatedSection>
-                <div className="pt-6 space-y-4">
-                  <div className="bg-primary/10 border border-primary/30 rounded-lg p-4 text-center">
-                    <p className="text-sm text-primary font-semibold mb-1">Oferta especial por tempo limitado</p>
-                    <div className="flex items-center justify-center space-x-3">
-                      <span className="text-lg text-muted-foreground line-through">R$ 297,00</span>
-                      <span className="text-3xl md:text-4xl font-bold text-primary">R$ 35,00</span>
+                <div className="bg-white border-2 border-primary rounded-lg p-6 shadow-md">
+                  <div className="text-center mb-4">
+                    <div className="flex items-center justify-center space-x-2 mb-2">
+                      <span className="text-2xl text-muted-foreground line-through">R$ 297</span>
+                      <span className="text-4xl font-bold text-primary">R$ 19,90</span>
+                      <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full font-bold">93% OFF</span>
                     </div>
-                    <p className="text-xs text-muted-foreground mt-1">Apenas 8 vagas restantes</p>
+                    <p className="text-sm text-muted-foreground">
+                      Curso completo + 11 bônus exclusivos
+                    </p>
                   </div>
                   
                   <a
                     href={checkoutUrl}
-                    className="block w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-lg text-lg md:text-xl text-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
-                    data-testid="hero-cta-button"
+                    className="block w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-6 rounded-lg text-lg text-center transition-all duration-200 shadow-lg hover:shadow-xl"
+                    data-testid="main-cta"
                   >
-                    Garantir Minha Vaga Agora
+                    Quero Aprender Agora por R$ 19,90
                   </a>
                   
-                  <p className="text-center text-sm text-muted-foreground">
-                    <i className="fas fa-shield-alt mr-1"></i>
-                    Compra 100% segura • Acesso imediato
-                  </p>
+                  <div className="flex items-center justify-center space-x-4 mt-4 text-xs text-muted-foreground">
+                    <div className="flex items-center space-x-1">
+                      <Shield className="w-4 h-4" />
+                      <span>Compra Segura</span>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      <Clock className="w-4 h-4" />
+                      <span>Acesso Imediato</span>
+                    </div>
+                  </div>
                 </div>
               </AnimatedSection>
             </div>
 
             {/* Hero Image - Desktop Only */}
             <div className="hidden lg:block">
-              <div>
-                <img
-                  src={heroImage}
-                  alt="Cutilagem Russa profissional"
-                  className="rounded-xl shadow-2xl w-full h-auto"
-                  data-testid="hero-image"
-                  loading="eager"
-                  decoding="async"
-                />
-              </div>
+              <img
+                src={heroImage}
+                alt="Curso de Cutilagem Russa - Manicure profissional"
+                className="rounded-xl shadow-lg w-full h-auto"
+                data-testid="hero-image"
+                loading="eager"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* HIGHLIGHT SECTION */}
-      <section className="py-2 md:py-8 bg-gradient-to-r from-primary/5 to-secondary/5">
-        <div className="container mx-auto px-4 text-center">
+      {/* VALUE HIGHLIGHTS */}
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4 text-center max-w-4xl">
           <AnimatedSection>
-            <div className="flex flex-col gap-4 max-w-lg mx-auto">
-              <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap">
-                <i className="fas fa-infinity text-xl"></i>
-                <span>Acesso Vitalício</span>
+            <h3 className="text-2xl font-bold mb-8 text-gray-800">
+              O que você leva neste investimento:
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-sm border">
+                <div className="text-primary mb-3">
+                  <CheckCircle className="w-8 h-8 mx-auto" />
+                </div>
+                <h4 className="font-semibold mb-2">Curso Completo</h4>
+                <p className="text-sm text-gray-600">Técnica de Cutilagem Russa do básico ao avançado</p>
               </div>
-              <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap">
-                <i className="fas fa-gift text-xl"></i>
-                <span>11 Bônus Exclusivos</span>
+              <div className="bg-white p-6 rounded-lg shadow-sm border">
+                <div className="text-primary mb-3">
+                  <Award className="w-8 h-8 mx-auto" />
+                </div>
+                <h4 className="font-semibold mb-2">11 Bônus Exclusivos</h4>
+                <p className="text-sm text-gray-600">Cursos extras que sozinhos valem mais que o investimento</p>
               </div>
-              <div className="bg-gradient-to-r from-emerald-500 to-green-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 border-2 border-white/20 whitespace-nowrap">
-                <i className="fas fa-certificate text-xl"></i>
-                <span>6 Certificados Inclusos</span>
+              <div className="bg-white p-6 rounded-lg shadow-sm border">
+                <div className="text-primary mb-3">
+                  <Shield className="w-8 h-8 mx-auto" />
+                </div>
+                <h4 className="font-semibold mb-2">Certificado Profissional</h4>
+                <p className="text-sm text-gray-600">Reconhecido no mercado de trabalho</p>
               </div>
             </div>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* VALUE PROPOSITION SECTION */}
-      <section className="bg-secondary py-16">
-        <div className="container mx-auto px-4 max-w-5xl text-center">
+      {/* INSTRUCTOR AUTHORITY */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
           <AnimatedSection>
-            <div className="bg-card rounded-xl shadow-lg p-8 md:p-12" data-testid="value-section">
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">23.000+</div>
-                  <p className="text-sm text-muted-foreground">Profissionais certificadas</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">R$ 2.000+</div>
-                  <p className="text-sm text-muted-foreground">Faturamento médio mensal</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">8 min</div>
-                  <p className="text-sm text-muted-foreground">Técnica completa</p>
-                </div>
-              </div>
-              
-              <div className="border-t pt-8">
-                <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="pricing-title">
-                  Investimento para sua Transformação
-                </h3>
-                
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-6">
-                  <div className="flex items-center justify-center space-x-4 mb-3">
-                    <span className="text-2xl text-muted-foreground line-through" data-testid="original-price">
-                      R$ 297,00
-                    </span>
-                    <span className="text-4xl md:text-5xl font-bold text-primary" data-testid="promotional-price">
-                      R$ 35,00
-                    </span>
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold mb-6">Quem vai te Ensinar</h3>
+              <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl p-8 max-w-2xl mx-auto">
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                  <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center">
+                    <Users className="w-12 h-12 text-white" />
                   </div>
-                  <p className="text-sm text-primary font-medium" data-testid="pricing-description">
-                    Promoção especial • Apenas 8 vagas restantes
+                  <div className="text-left">
+                    <h4 className="text-xl font-bold mb-2">Especialista em Cutilagem Russa</h4>
+                    <div className="space-y-2 text-sm text-gray-600">
+                      <p>✓ <strong>8+ anos</strong> de experiência no mercado</p>
+                      <p>✓ <strong>23.000+ alunas</strong> certificadas com sucesso</p>
+                      <p>✓ <strong>Referência nacional</strong> em técnicas avançadas</p>
+                      <p>✓ <strong>Certificada internacionalmente</strong> em Cutilagem Russa</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-white rounded-lg border border-primary/20">
+                  <p className="text-center text-sm italic text-gray-700">
+                    "Minha missão é democratizar o conhecimento da Cutilagem Russa e 
+                    ajudar cada manicure a conquistar sua independência financeira."
                   </p>
                 </div>
-
-                <a
-                  href={checkoutUrl}
-                  className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-12 rounded-lg text-lg md:text-xl transition-all duration-300 shadow-lg hover:shadow-xl"
-                  data-testid="pricing-cta-button"
-                >
-                  Começar Agora
-                </a>
-                
-                <p className="text-xs text-muted-foreground mt-4">
-                  Acesso imediato • Garantia de satisfação
-                </p>
               </div>
             </div>
           </AnimatedSection>
+        </div>
+      </section>
+
+      {/* BONUS VALUE STACK */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <AnimatedSection>
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold mb-4">Valor Total do Pacote Completo</h3>
+              <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-primary/20">
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h4 className="font-semibold mb-4 text-lg">Curso Principal:</h4>
+                    <p className="text-gray-600 mb-2">• Cutilagem Russa Completa</p>
+                    <p className="text-gray-600 mb-2">• Certificado Profissional</p>
+                    <p className="text-gray-600 mb-2">• Suporte Vitalício</p>
+                    <p className="text-right font-bold text-primary">R$ 297,00</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-4 text-lg">11 Bônus Exclusivos:</h4>
+                    <p className="text-gray-600 mb-2">• 6 Cursos Populares e Atualizados</p>
+                    <p className="text-gray-600 mb-2">• 5 Cursos Profissionais Extras</p>
+                    <p className="text-gray-600 mb-2">• Todos com Certificado</p>
+                    <p className="text-right font-bold text-primary">R$ 1.247,00</p>
+                  </div>
+                </div>
+                <div className="border-t pt-6">
+                  <div className="flex justify-between items-center mb-4">
+                    <span className="text-xl font-bold">Valor Total:</span>
+                    <span className="text-2xl font-bold text-gray-500 line-through">R$ 1.544,00</span>
+                  </div>
+                  <div className="flex justify-between items-center mb-6">
+                    <span className="text-2xl font-bold text-primary">Você paga hoje:</span>
+                    <span className="text-4xl font-bold text-primary">R$ 19,90</span>
+                  </div>
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <p className="text-center text-red-700 font-semibold">
+                      🔥 Economia de R$ 1.524,10 (98,7% de desconto!)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* WHY RUSSIAN MANICURE */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <AnimatedSection>
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold mb-4">Por que a Cutilagem Russa é tão Valorizada?</h3>
+              <p className="text-lg text-gray-600">Descubra por que suas clientes vão preferir você</p>
+            </div>
+          </AnimatedSection>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <AnimatedSection>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <CheckCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Resultado Superior</h4>
+                    <p className="text-gray-600">Cutículas perfeitas que duram até 3 semanas</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <CheckCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Menos Dor para a Cliente</h4>
+                    <p className="text-gray-600">Técnica mais delicada e menos invasiva</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <CheckCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Você Pode Cobrar Mais</h4>
+                    <p className="text-gray-600">Clientes pagam 50% a 100% a mais pelo serviço</p>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+            
+            <AnimatedSection>
+              <div className="bg-primary/5 p-6 rounded-lg">
+                <h4 className="font-bold text-lg mb-4 text-center">Matemática Simples:</h4>
+                <div className="space-y-3 text-center">
+                  <p className="text-gray-700">
+                    <span className="font-semibold">Manicure tradicional:</span> R$ 25
+                  </p>
+                  <p className="text-gray-700">
+                    <span className="font-semibold">Cutilagem Russa:</span> R$ 45-60
+                  </p>
+                  <div className="border-t pt-3 mt-3">
+                    <p className="text-primary font-bold text-lg">
+                      +R$ 20-35 por cliente
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Com apenas 10 clientes/semana:<br/>
+                    <span className="font-semibold text-primary">+R$ 800 a R$ 1.400/mês</span>
+                  </p>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </section>
 
@@ -245,7 +347,7 @@ export default function Home() {
 
               >
                 <div className="flex items-start space-x-3" data-testid={`course-module-${index}`}>
-                  <i className="fas fa-check-circle text-primary text-xl mt-1"></i>
+                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <span className="text-lg">{module}</span>
                 </div>
               </AnimatedSection>
@@ -278,7 +380,7 @@ export default function Home() {
                   className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
                   data-testid={`bonus-card-${index}`}
                 >
-                  <i className={`${bonus.icon} text-primary text-2xl mb-3`}></i>
+                  <Award className="w-8 h-8 text-primary mb-3 mx-auto" />
                   <h4 className="font-bold text-lg mb-2">{bonus.title}</h4>
                 </div>
               </AnimatedSection>
@@ -312,7 +414,7 @@ export default function Home() {
                 >
                   <h4 className="font-bold text-xl mb-3">{bonus.title}</h4>
                   <div className="text-sm text-primary font-semibold mt-3 bg-primary/10 px-3 py-2 rounded-full">
-                    <i className="fas fa-certificate mr-2"></i>
+                    <Award className="w-4 h-4 mr-2" />
                     CURSO COMPLETO + CERTIFICADO
                   </div>
                 </div>
@@ -333,9 +435,7 @@ export default function Home() {
               <div className="flex justify-center items-center space-x-2 mb-2">
                 <div className="flex space-x-1">
                   {[...Array(5)].map((_, i) => (
-                    <div key={i} className="relative">
-                      <i className="fas fa-star text-yellow-400 text-xl"></i>
-                    </div>
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
                 <span className="text-sm text-muted-foreground ml-2">4.9/5.0</span>
@@ -356,7 +456,7 @@ export default function Home() {
           <AnimatedSection>
             <div className="bg-card rounded-xl p-8 md:p-12 shadow-lg" data-testid="guarantee-section">
               <div className="mb-6">
-                <i className="fas fa-shield-alt text-green-500 text-6xl mb-4"></i>
+                <Shield className="w-16 h-16 text-green-500 mb-4 mx-auto" />
               </div>
               <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="guarantee-title">
                 Nossa Garantia para Você
@@ -368,7 +468,7 @@ export default function Home() {
                 ✅ Atualizações gratuitas
               </p>
               <div className="flex justify-center items-center space-x-4 text-green-500">
-                <i className="fas fa-check-circle text-2xl"></i>
+                <CheckCircle className="w-6 h-6" />
                 <span className="text-lg font-semibold">100% Seguro e Confiável</span>
               </div>
             </div>
@@ -376,54 +476,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FINAL CTA SECTION */}
-      <section className="py-16 bg-background">
+      {/* FINAL MESSAGE SECTION */}
+      <section className="py-16 bg-primary/5">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <AnimatedSection>
-            <div className="space-y-8" data-testid="final-cta-section">
-              <div className="bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20 py-8 px-8 rounded-xl">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4" data-testid="final-title">
-                  Sua Nova Carreira Começa Agora
-                </h3>
-                <p className="text-lg md:text-xl text-muted-foreground mb-6" data-testid="final-description">
-                  Junte-se às <span className="text-primary font-semibold">23.000+ profissionais</span> que já transformaram suas vidas.
-                  <br className="hidden md:block" />
-                  Restam apenas <span className="text-primary font-semibold">8 vagas</span> para esta turma especial.
+            <div className="space-y-6">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-800">
+                Transforme sua Carreira Hoje Mesmo
+              </h3>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Mais de <span className="font-semibold text-primary">23.000 manicures</span> já descobriram como 
+                aumentar sua renda com a Cutilagem Russa. 
+                <span className="block mt-2 font-semibold">
+                  Não deixe essa oportunidade passar!
+                </span>
+              </p>
+              
+              <div className="bg-white border border-primary/30 rounded-lg p-6 max-w-sm mx-auto">
+                <p className="text-sm text-gray-600 mb-2">Investimento hoje:</p>
+                <div className="flex items-center justify-center space-x-3">
+                  <span className="text-lg text-gray-400 line-through">R$ 297</span>
+                  <span className="text-3xl font-bold text-primary">R$ 19,90</span>
+                </div>
+                <p className="text-xs text-gray-500 mt-2">
+                  ⬆️ Role para cima e garanta sua vaga
                 </p>
-                
-                <div className="bg-card border border-primary/30 rounded-lg p-4 mb-6 inline-block">
-                  <div className="flex items-center space-x-3">
-                    <span className="text-lg text-muted-foreground line-through">R$ 297</span>
-                    <span className="text-2xl md:text-3xl font-bold text-primary">R$ 35</span>
-                    <span className="bg-primary text-primary-foreground text-xs px-2 py-1 rounded-full">88% OFF</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-4">
-                <a
-                  href={checkoutUrl}
-                  className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-12 rounded-lg text-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
-                  data-testid="final-cta-button"
-                >
-                  Garantir Minha Vaga
-                  <div className="text-sm mt-1 opacity-90">Acesso imediato</div>
-                </a>
-              </div>
-
-              <div className="flex justify-center items-center space-x-6 text-sm text-muted-foreground">
-                <div className="flex items-center space-x-1">
-                  <i className="fas fa-shield-alt text-green-500"></i>
-                  <span>Compra segura</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <i className="fas fa-certificate text-blue-500"></i>
-                  <span>Certificado incluído</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <i className="fas fa-infinity text-purple-500"></i>
-                  <span>Acesso vitalício</span>
-                </div>
               </div>
             </div>
           </AnimatedSection>
@@ -447,8 +524,8 @@ export default function Home() {
           <div className="space-y-4">
             <AnimatedSection>
               <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-1">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
-                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
                   Por quanto tempo terei acesso ao curso?
                 </summary>
                 <div className="mt-4 text-muted-foreground">
@@ -459,8 +536,8 @@ export default function Home() {
 
             <AnimatedSection>
               <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-2">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
-                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
                   Vou receber certificado?
                 </summary>
                 <div className="mt-4 text-muted-foreground">
@@ -471,8 +548,8 @@ export default function Home() {
 
             <AnimatedSection>
               <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-3">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
-                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
                   Preciso ter experiência prévia?
                 </summary>
                 <div className="mt-4 text-muted-foreground">
@@ -483,8 +560,8 @@ export default function Home() {
 
             <AnimatedSection>
               <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-4">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
-                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
                   Quais materiais preciso ter?
                 </summary>
                 <div className="mt-4 text-muted-foreground">
@@ -495,8 +572,8 @@ export default function Home() {
 
             <AnimatedSection>
               <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-5">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
-                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
                   Como funciona o acesso?
                 </summary>
                 <div className="mt-4 text-muted-foreground">
@@ -507,8 +584,8 @@ export default function Home() {
 
             <AnimatedSection>
               <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-6">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
-                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
                   São vídeo aulas?
                 </summary>
                 <div className="mt-4 text-muted-foreground">
@@ -519,8 +596,8 @@ export default function Home() {
 
             <AnimatedSection>
               <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-7">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors">
-                  <i className="fas fa-question-circle text-primary mr-2"></i>
+                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
                   Posso assistir pelo celular?
                 </summary>
                 <div className="mt-4 text-muted-foreground">
@@ -536,7 +613,7 @@ export default function Home() {
                 Pronta para transformar sua carreira?
               </p>
               <p className="text-sm text-muted-foreground">
-                Role para cima e garante sua vaga especial por R$ 35,00
+                ⬆️ Role para cima e garanta sua vaga por R$ 19,90
               </p>
             </div>
           </AnimatedSection>
