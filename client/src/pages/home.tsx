@@ -19,12 +19,12 @@ const courseModules = [
 ];
 
 const bonuses = [
-  { title: "Curso Manicure Agenda Cheia", icon: "fas fa-gift" },
+  { title: "Curso Manicure Agenda Cheia", icon: "fas fa-calendar-check" },
   { title: "Divulgação no Instagram Oficial", icon: "fab fa-instagram" },
-  { title: "Aula Exclusiva de Esmaltação em Gel", icon: "fas fa-paint-brush" },
-  { title: "Modelos de Unhas Decoradas", icon: "fas fa-palette" },
-  { title: "30% de desconto em materiais", icon: "fas fa-percentage" },
-  { title: "Curso Instagram de Sucesso", icon: "fab fa-instagram" },
+  { title: "Aula Exclusiva de Esmaltação em Gel", icon: "fas fa-tint" },
+  { title: "Modelos de Unhas Decoradas", icon: "fas fa-hand-sparkles" },
+  { title: "30% de desconto em materiais", icon: "fas fa-tags" },
+  { title: "Curso Instagram de Sucesso", icon: "fas fa-chart-line" },
 ];
 
 const additionalBonuses = [
