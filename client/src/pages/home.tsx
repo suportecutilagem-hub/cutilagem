@@ -61,7 +61,6 @@ export default function Home() {
                 className="rounded-xl shadow-2xl w-full max-w-sm h-auto"
                 data-testid="hero-image-mobile"
                 loading="eager"
-                fetchPriority="high"
                 decoding="async"
               />
             </div>
@@ -71,52 +70,60 @@ export default function Home() {
             <div className="space-y-6">
               <AnimatedSection>
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight" data-testid="hero-title">
-                  <span className="text-primary">CUTILAGEM RUSSA PROFISSIONAL:</span><br/>
-                  <span className="text-black">Transforme sua Carreira em 8 Minutos!</span>
+                  Domine a <span className="text-primary">Cutilagem Russa</span> e
+                  <span className="block mt-2">Transforme sua Carreira</span>
                 </h1>
               </AnimatedSection>
               
               <AnimatedSection>
-                <h2 className="text-xl md:text-2xl text-foreground font-bold" data-testid="hero-subtitle">
-                  🎯 <span className="text-primary">FATURE R$ 2.000+ POR MÊS</span> dominando a técnica mais procurada por clientes VIP
+                <h2 className="text-xl md:text-2xl text-muted-foreground font-medium" data-testid="hero-subtitle">
+                  A técnica mais valorizada pelas clientes VIP que já transformou
+                  <span className="text-primary font-bold"> mais de 23.000 profissionais</span>
                 </h2>
               </AnimatedSection>
               
               <AnimatedSection>
-                <div className="bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 p-4 rounded-lg" data-testid="hero-value-proposition">
-                  <p className="text-lg md:text-xl text-green-800 font-semibold">
-                    ✅ <strong>Método comprovado</strong> que já transformou <span className="text-primary font-bold">23.000+ manicures</span><br/>
-                    ✅ <strong>Aprenda em casa</strong> com certificado profissional reconhecido<br/>
-                    ✅ <strong>Suporte vitalício</strong> + 11 bônus exclusivos inclusos
-                  </p>
+                <div className="bg-card border-l-4 border-primary p-6 rounded-lg shadow-sm" data-testid="hero-value-proposition">
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <p className="text-lg">Método profissional com resultados em <strong>8 minutos</strong></p>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <p className="text-lg">Certificado reconhecido + <strong>11 bônus exclusivos</strong></p>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                      <p className="text-lg">Acesso vitalício + suporte especializado</p>
+                    </div>
+                  </div>
                 </div>
               </AnimatedSection>
               
               <AnimatedSection>
-                <div className="pt-6">
-                  <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-6 rounded-xl border-4 border-yellow-400 shadow-2xl transform hover:scale-105 transition-all duration-300">
-                    <div className="text-center">
-                      <div className="text-sm font-bold mb-2 text-yellow-300">
-                        🔥 PROMOÇÃO RELÂMPAGO - ÚLTIMAS 8 VAGAS! 🔥
-                      </div>
-                      <div className="text-4xl md:text-5xl font-black mb-2">
-                        <span className="line-through text-gray-300 text-2xl">R$ 297</span>
-                        <span className="text-yellow-300 ml-2">R$ 35</span>
-                      </div>
-                      <div className="text-sm mb-4 text-red-100">
-                        Economia de R$ 262,00 • Desconto de 88%
-                      </div>
-                      <a
-                        href={checkoutUrl}
-                        className="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-black py-4 px-8 rounded-full text-lg md:text-xl transition-all duration-300 animate-pulse shadow-lg border-2 border-white transform hover:scale-110"
-                        data-testid="hero-cta-button"
-                      >
-                        <i className="fas fa-rocket mr-2"></i>
-                        QUERO GARANTIR MINHA VAGA AGORA!
-                        <div className="text-sm font-normal mt-1">💳 Acesso Imediato • 100% Seguro</div>
-                      </a>
+                <div className="pt-6 space-y-4">
+                  <div className="bg-primary/10 border border-primary/30 rounded-lg p-4 text-center">
+                    <p className="text-sm text-primary font-semibold mb-1">Oferta especial por tempo limitado</p>
+                    <div className="flex items-center justify-center space-x-3">
+                      <span className="text-lg text-muted-foreground line-through">R$ 297,00</span>
+                      <span className="text-3xl md:text-4xl font-bold text-primary">R$ 35,00</span>
                     </div>
+                    <p className="text-xs text-muted-foreground mt-1">Apenas 8 vagas restantes</p>
                   </div>
+                  
+                  <a
+                    href={checkoutUrl}
+                    className="block w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-lg text-lg md:text-xl text-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
+                    data-testid="hero-cta-button"
+                  >
+                    Garantir Minha Vaga Agora
+                  </a>
+                  
+                  <p className="text-center text-sm text-muted-foreground">
+                    <i className="fas fa-shield-alt mr-1"></i>
+                    Compra 100% segura • Acesso imediato
+                  </p>
                 </div>
               </AnimatedSection>
             </div>
@@ -130,7 +137,6 @@ export default function Home() {
                   className="rounded-xl shadow-2xl w-full h-auto"
                   data-testid="hero-image"
                   loading="eager"
-                  fetchPriority="high"
                   decoding="async"
                 />
               </div>
@@ -161,35 +167,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRICING SECTION */}
+      {/* VALUE PROPOSITION SECTION */}
       <section className="bg-secondary py-16">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+        <div className="container mx-auto px-4 max-w-5xl text-center">
           <AnimatedSection>
-            <div className="bg-card rounded-xl shadow-lg p-8 md:p-12" data-testid="pricing-section">
-              <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="pricing-title">
-                Oferta Especial por Tempo Limitado
-              </h3>
+            <div className="bg-card rounded-xl shadow-lg p-8 md:p-12" data-testid="value-section">
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-2">23.000+</div>
+                  <p className="text-sm text-muted-foreground">Profissionais certificadas</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-2">R$ 2.000+</div>
+                  <p className="text-sm text-muted-foreground">Faturamento médio mensal</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-2">8 min</div>
+                  <p className="text-sm text-muted-foreground">Técnica completa</p>
+                </div>
+              </div>
               
-              <div className="space-y-4 mb-8">
-                <p className="text-3xl md:text-4xl text-muted-foreground line-through" data-testid="original-price">
-                  De R$ 297,00
-                </p>
-                <p className="text-5xl md:text-7xl font-bold text-primary" data-testid="promotional-price">
-                  R$ 35,00
-                </p>
-                <p className="text-lg text-muted-foreground" data-testid="pricing-description">
-                  Oferta especial válida por pouco tempo – últimas 8 vagas disponíveis.
+              <div className="border-t pt-8">
+                <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="pricing-title">
+                  Investimento para sua Transformação
+                </h3>
+                
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-6">
+                  <div className="flex items-center justify-center space-x-4 mb-3">
+                    <span className="text-2xl text-muted-foreground line-through" data-testid="original-price">
+                      R$ 297,00
+                    </span>
+                    <span className="text-4xl md:text-5xl font-bold text-primary" data-testid="promotional-price">
+                      R$ 35,00
+                    </span>
+                  </div>
+                  <p className="text-sm text-primary font-medium" data-testid="pricing-description">
+                    Promoção especial • Apenas 8 vagas restantes
+                  </p>
+                </div>
+
+                <a
+                  href={checkoutUrl}
+                  className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-12 rounded-lg text-lg md:text-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                  data-testid="pricing-cta-button"
+                >
+                  Começar Agora
+                </a>
+                
+                <p className="text-xs text-muted-foreground mt-4">
+                  Acesso imediato • Garantia de satisfação
                 </p>
               </div>
-
-              <a
-                href={checkoutUrl}
-                className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition-all duration-300 pulse-border transform hover:scale-105"
-                data-testid="pricing-cta-button"
-              >
-                <i className="fas fa-shopping-cart mr-2"></i>
-                Aproveitar Esta Oferta Agora
-              </a>
             </div>
           </AnimatedSection>
         </div>
@@ -300,15 +328,21 @@ export default function Home() {
           <AnimatedSection>
             <div className="text-center mb-12">
               <h3 className="text-3xl md:text-4xl font-bold mb-4" data-testid="testimonials-title">
-                Referências das Nossas Alunas
+                O que Dizem Nossas Profissionais
               </h3>
-              <div className="flex justify-center mt-4 space-x-1">
-                {[...Array(5)].map((_, i) => (
-                  <div key={i} className="relative">
-                    <i className="fas fa-star text-yellow-400 text-xl"></i>
-                  </div>
-                ))}
+              <div className="flex justify-center items-center space-x-2 mb-2">
+                <div className="flex space-x-1">
+                  {[...Array(5)].map((_, i) => (
+                    <div key={i} className="relative">
+                      <i className="fas fa-star text-yellow-400 text-xl"></i>
+                    </div>
+                  ))}
+                </div>
+                <span className="text-sm text-muted-foreground ml-2">4.9/5.0</span>
               </div>
+              <p className="text-sm text-muted-foreground">
+                Baseado em <span className="font-semibold text-primary">+23.000 avaliações reais</span> de profissionais certificadas
+              </p>
             </div>
           </AnimatedSection>
 
@@ -325,11 +359,13 @@ export default function Home() {
                 <i className="fas fa-shield-alt text-green-500 text-6xl mb-4"></i>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="guarantee-title">
-                Garantia Total
+                Nossa Garantia para Você
               </h3>
               <p className="text-lg text-muted-foreground mb-6" data-testid="guarantee-description">
-                Você estuda no seu ritmo, recebe certificado e conta com suporte exclusivo.{" "}
-                <span className="font-bold text-primary">Risco zero para você!</span>
+                ✅ Acesso vitalício ao conteúdo<br/>
+                ✅ Certificado profissional reconhecido<br/>
+                ✅ Suporte especializado incluso<br/>
+                ✅ Atualizações gratuitas
               </p>
               <div className="flex justify-center items-center space-x-4 text-green-500">
                 <i className="fas fa-check-circle text-2xl"></i>
@@ -340,39 +376,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FINAL URGENCY SECTION */}
+      {/* FINAL CTA SECTION */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <AnimatedSection>
-            <div className="space-y-8" data-testid="final-urgency-section">
-              <div className="bg-primary text-primary-foreground py-6 px-8 rounded-xl">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4" data-testid="final-urgency-title">
-                  <i className="fas fa-exclamation-triangle mr-2"></i>
-                  Últimas 8 Vagas Disponíveis!
+            <div className="space-y-8" data-testid="final-cta-section">
+              <div className="bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20 py-8 px-8 rounded-xl">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4" data-testid="final-title">
+                  Sua Nova Carreira Começa Agora
                 </h3>
-                <p className="text-lg md:text-xl" data-testid="final-urgency-description">
-                  Restam apenas 8 vagas e o valor promocional de R$ 35,00 é por tempo limitado!<br />
-                  <span className="font-bold">
-                    Mais de 23.000 alunas já transformaram suas carreiras. E você, vai ficar de fora?
-                  </span>
+                <p className="text-lg md:text-xl text-muted-foreground mb-6" data-testid="final-description">
+                  Junte-se às <span className="text-primary font-semibold">23.000+ profissionais</span> que já transformaram suas vidas.
+                  <br className="hidden md:block" />
+                  Restam apenas <span className="text-primary font-semibold">8 vagas</span> para esta turma especial.
                 </p>
+                
+                <div className="bg-card border border-primary/30 rounded-lg p-4 mb-6 inline-block">
+                  <div className="flex items-center space-x-3">
+                    <span className="text-lg text-muted-foreground line-through">R$ 297</span>
+                    <span className="text-2xl md:text-3xl font-bold text-primary">R$ 35</span>
+                    <span className="bg-primary text-primary-foreground text-xs px-2 py-1 rounded-full">88% OFF</span>
+                  </div>
+                </div>
               </div>
 
               <div className="pt-4">
                 <a
                   href={checkoutUrl}
-                  className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-12 rounded-lg text-xl md:text-2xl transition-all duration-300 pulse-border transform hover:scale-105"
+                  className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 px-12 rounded-lg text-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
                   data-testid="final-cta-button"
                 >
-                  <i className="fas fa-rocket mr-3"></i>
-                  QUERO GARANTIR MINHA VAGA AGORA!
-                  <div className="text-sm mt-2 opacity-90">Por apenas R$ 35,00</div>
+                  Garantir Minha Vaga
+                  <div className="text-sm mt-1 opacity-90">Acesso imediato</div>
                 </a>
               </div>
 
-              <p className="text-sm text-muted-foreground" data-testid="security-note">
-                Processamento 100% seguro • Acesso imediato após a compra
-              </p>
+              <div className="flex justify-center items-center space-x-6 text-sm text-muted-foreground">
+                <div className="flex items-center space-x-1">
+                  <i className="fas fa-shield-alt text-green-500"></i>
+                  <span>Compra segura</span>
+                </div>
+                <div className="flex items-center space-x-1">
+                  <i className="fas fa-certificate text-blue-500"></i>
+                  <span>Certificado incluído</span>
+                </div>
+                <div className="flex items-center space-x-1">
+                  <i className="fas fa-infinity text-purple-500"></i>
+                  <span>Acesso vitalício</span>
+                </div>
+              </div>
             </div>
           </AnimatedSection>
         </div>
@@ -479,17 +531,12 @@ export default function Home() {
           </div>
 
           <AnimatedSection>
-            <div className="text-center mt-12">
-              <a
-                href={checkoutUrl}
-                className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition-all duration-300 pulse-border transform hover:scale-105"
-                data-testid="faq-footer-cta-button"
-              >
-                <i className="fas fa-shopping-cart mr-2"></i>
-                Garantir Minha Vaga Agora por R$ 35,00
-              </a>
-              <p className="text-sm text-muted-foreground mt-4">
-                Últimas 8 vagas disponíveis • Oferta por tempo limitado
+            <div className="text-center mt-12 p-6 bg-primary/5 rounded-lg border border-primary/20">
+              <p className="text-lg font-semibold text-primary mb-2">
+                Pronta para transformar sua carreira?
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Role para cima e garante sua vaga especial por R$ 35,00
               </p>
             </div>
           </AnimatedSection>
