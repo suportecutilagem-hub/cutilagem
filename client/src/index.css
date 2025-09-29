@@ -146,4 +146,28 @@
     }
   }
 
+  .cta-pulse {
+    animation: ctaPulse 2s ease-in-out infinite;
+    box-shadow: 0 4px 14px 0 rgba(191, 30, 88, 0.39);
+  }
+
+  @keyframes ctaPulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 4px 14px 0 rgba(191, 30, 88, 0.39);
+    }
+    50% {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px 0 rgba(191, 30, 88, 0.5);
+    }
+  }
+
+  .faq-arrow {
+    transition: transform 0.3s ease;
+  }
+
+  details[open] .faq-arrow {
+    transform: rotate(180deg);
+  }
+
 }

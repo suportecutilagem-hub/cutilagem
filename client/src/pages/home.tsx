@@ -1,6 +1,6 @@
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { TestimonialCarousel } from "@/components/testimonial-carousel";
-import { Shield, Clock, Users, Award, CheckCircle, Star, TrendingUp, HelpCircle, PlayCircle, BookOpen, Sparkles } from "lucide-react";
+import { Shield, Clock, Users, Award, CheckCircle, Star, TrendingUp, HelpCircle, PlayCircle, BookOpen, Sparkles, Gift, Instagram, Paintbrush, Palette, Percent, ChevronDown } from "lucide-react";
 import heroImage from "@assets/image_1758982671326.png";
 
 const checkoutUrl = "https://pay.cutilagemrussa.com/checkout-6880/?add-to-cart=6880";
@@ -20,20 +20,20 @@ const courseModules = [
 ];
 
 const bonuses = [
-  { title: "Curso Manicure Agenda Cheia", icon: "fas fa-gift" },
-  { title: "Divulgação no Instagram Oficial", icon: "fab fa-instagram" },
-  { title: "Aula Exclusiva de Esmaltação em Gel", icon: "fas fa-paint-brush" },
-  { title: "Modelos de Unhas Decoradas", icon: "fas fa-palette" },
-  { title: "30% de desconto em materiais", icon: "fas fa-percentage" },
-  { title: "Curso Instagram de Sucesso", icon: "fab fa-instagram" },
+  { title: "Curso Manicure Agenda Cheia", icon: Gift },
+  { title: "Divulgação no Instagram Oficial", icon: Instagram },
+  { title: "Aula Exclusiva de Esmaltação em Gel", icon: Paintbrush },
+  { title: "Modelos de Unhas Decoradas", icon: Palette },
+  { title: "30% de desconto em materiais", icon: Percent },
+  { title: "Curso Instagram de Sucesso", icon: Instagram },
 ];
 
 const additionalBonuses = [
-  { title: "SPA DOS PÉS", icon: "fas fa-spa" },
-  { title: "MANICURE E PEDICURE", icon: "fas fa-hands" },
-  { title: "ALONGAMENTO NO MOLDE F1", icon: "fas fa-magic" },
-  { title: "ALONGAMENTO DE UNHAS DE FIBRA DE VIDRO", icon: "fas fa-gem" },
-  { title: "UNHAS DECORADAS", icon: "fas fa-star" },
+  { title: "SPA DOS PÉS" },
+  { title: "MANICURE E PEDICURE" },
+  { title: "ALONGAMENTO NO MOLDE F1" },
+  { title: "ALONGAMENTO DE UNHAS DE FIBRA DE VIDRO" },
+  { title: "UNHAS DECORADAS" },
 ];
 
 export default function Home() {
@@ -113,7 +113,7 @@ export default function Home() {
                   
                   <a
                     href={checkoutUrl}
-                    className="block w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-6 rounded-lg text-lg text-center transition-all duration-200 shadow-lg hover:shadow-xl"
+                    className="block w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-6 rounded-lg text-lg text-center transition-all duration-200 cta-pulse"
                     data-testid="main-cta"
                   >
                     Quero Aprender Agora por R$ 19,90
@@ -341,20 +341,22 @@ export default function Home() {
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {bonuses.map((bonus, index) => (
-              <AnimatedSection
-                key={`bonus-${index}`}
-
-              >
-                <div
-                  className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-                  data-testid={`bonus-card-${index}`}
+            {bonuses.map((bonus, index) => {
+              const IconComponent = bonus.icon;
+              return (
+                <AnimatedSection
+                  key={`bonus-${index}`}
                 >
-                  <Award className="w-8 h-8 text-primary mb-3 mx-auto" />
-                  <h4 className="font-bold text-lg mb-2">{bonus.title}</h4>
-                </div>
-              </AnimatedSection>
-            ))}
+                  <div
+                    className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                    data-testid={`bonus-card-${index}`}
+                  >
+                    <IconComponent className="w-8 h-8 text-primary mb-3 mx-auto" />
+                    <h4 className="font-bold text-lg mb-2">{bonus.title}</h4>
+                  </div>
+                </AnimatedSection>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -382,11 +384,11 @@ export default function Home() {
                   className="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 border-2 border-primary/30"
                   data-testid={`additional-bonus-card-${index}`}
                 >
-                  <h4 className="font-bold text-xl mb-3">{bonus.title}</h4>
-                  <div className="text-sm text-primary font-semibold mt-3 bg-primary/10 px-3 py-2 rounded-full">
-                    <Award className="w-4 h-4 mr-2" />
-                    CURSO COMPLETO + CERTIFICADO
+                  <div className="flex items-center gap-2 mb-3">
+                    <Award className="w-5 h-5 text-primary" />
+                    <span className="text-xs text-primary font-semibold">CERTIFICADO</span>
                   </div>
+                  <h4 className="font-bold text-xl">{bonus.title}</h4>
                 </div>
               </AnimatedSection>
             ))}
@@ -421,20 +423,28 @@ export default function Home() {
       </section>
 
       {/* GUARANTEE SECTION */}
-      <section className="py-12 bg-gradient-to-r from-green-50 to-emerald-50">
-        <div className="container mx-auto px-4 max-w-3xl text-center">
+      <section className="py-16 bg-gradient-to-br from-primary/5 to-primary/10">
+        <div className="container mx-auto px-4 max-w-4xl">
           <AnimatedSection>
-            <div className="bg-white rounded-lg p-6 shadow-sm border border-green-200" data-testid="guarantee-section">
-              <Shield className="w-12 h-12 text-green-600 mb-4 mx-auto" />
-              <h3 className="text-xl font-bold mb-4 text-green-800" data-testid="guarantee-title">
+            <div className="text-center" data-testid="guarantee-section">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-lg mb-6">
+                <Shield className="w-10 h-10 text-primary" />
+              </div>
+              <h3 className="text-3xl font-bold mb-8 text-gray-800" data-testid="guarantee-title">
                 Garantia Completa
               </h3>
-              <p className="text-lg text-muted-foreground mb-6" data-testid="guarantee-description">
-                ✅ Acesso vitalício ao conteúdo<br/>
-                ✅ Certificado profissional reconhecido<br/>
-                ✅ Suporte especializado incluso<br/>
-                ✅ Atualizações gratuitas
-              </p>
+              <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <CheckCircle className="w-8 h-8 text-primary mb-3 mx-auto" />
+                  <h4 className="font-semibold mb-2">Acesso Vitalício</h4>
+                  <p className="text-sm text-gray-600">Assista quando e quantas vezes quiser</p>
+                </div>
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <CheckCircle className="w-8 h-8 text-primary mb-3 mx-auto" />
+                  <h4 className="font-semibold mb-2">Suporte Especializado</h4>
+                  <p className="text-sm text-gray-600">Tire todas as suas dúvidas</p>
+                </div>
+              </div>
             </div>
           </AnimatedSection>
         </div>
@@ -464,7 +474,7 @@ export default function Home() {
                 </div>
                 <a
                   href={checkoutUrl}
-                  className="inline-block w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-lg text-sm text-center transition-all duration-200 shadow-lg hover:shadow-xl mt-3"
+                  className="inline-block w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-lg text-sm text-center transition-all duration-200 cta-pulse mt-3"
                   data-testid="final-message-cta"
                 >
                   Garantir Minha Vaga Agora
@@ -490,71 +500,92 @@ export default function Home() {
 
             <div className="space-y-3">
               <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-1">
-                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
-                  Por quanto tempo terei acesso ao curso?
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                    <span>Por quanto tempo terei acesso ao curso?</span>
+                  </div>
+                  <ChevronDown className="w-5 h-5 text-gray-400 faq-arrow" />
                 </summary>
-                <div className="mt-3 text-sm text-gray-600">
+                <div className="mt-3 text-sm text-gray-600 pl-5">
                   Você terá acesso vitalício ao curso! Poderá assistir quantas vezes quiser, no seu próprio ritmo, sem pressa.
                 </div>
               </details>
 
               <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-2">
-                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
-                  Vou receber certificado?
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                    <span>Vou receber certificado?</span>
+                  </div>
+                  <ChevronDown className="w-5 h-5 text-gray-400 faq-arrow" />
                 </summary>
-                <div className="mt-3 text-sm text-gray-600">
+                <div className="mt-3 text-sm text-gray-600 pl-5">
                   Sim! Você receberá 6 certificados: Cutilagem Russa + 5 cursos bônus completos. Todos os certificados são válidos e reconhecidos.
                 </div>
               </details>
 
               <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-3">
-                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
-                  Preciso ter experiência prévia?
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                    <span>Preciso ter experiência prévia?</span>
+                  </div>
+                  <ChevronDown className="w-5 h-5 text-gray-400 faq-arrow" />
                 </summary>
-                <div className="mt-3 text-sm text-gray-600">
+                <div className="mt-3 text-sm text-gray-600 pl-5">
                   Não! O curso é completo e foi desenvolvido tanto para iniciantes quanto para profissionais que querem aperfeiçoar a técnica.
                 </div>
               </details>
 
               <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-4">
-                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
-                  Quais materiais preciso ter?
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                    <span>Quais materiais preciso ter?</span>
+                  </div>
+                  <ChevronDown className="w-5 h-5 text-gray-400 faq-arrow" />
                 </summary>
-                <div className="mt-3 text-sm text-gray-600">
+                <div className="mt-3 text-sm text-gray-600 pl-5">
                   O curso inclui uma lista completa de materiais e onde comprá-los. Além disso, você ganha 30% de desconto na compra dos materiais!
                 </div>
               </details>
 
               <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-5">
-                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
-                  Como funciona o acesso?
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                    <span>Como funciona o acesso?</span>
+                  </div>
+                  <ChevronDown className="w-5 h-5 text-gray-400 faq-arrow" />
                 </summary>
-                <div className="mt-3 text-sm text-gray-600">
+                <div className="mt-3 text-sm text-gray-600 pl-5">
                   Após a compra, você receberá o acesso imediatamente no seu e-mail. O curso fica disponível 24h por dia na nossa plataforma.
                 </div>
               </details>
 
               <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-6">
-                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
-                  São vídeo aulas?
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                    <span>São vídeo aulas?</span>
+                  </div>
+                  <ChevronDown className="w-5 h-5 text-gray-400 faq-arrow" />
                 </summary>
-                <div className="mt-3 text-sm text-gray-600">
+                <div className="mt-3 text-sm text-gray-600 pl-5">
                   Sim! Todas as aulas e bônus são em vídeo aulas. Conteúdo 100% em vídeo para você aprender de forma prática e visual.
                 </div>
               </details>
 
               <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-7">
-                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
-                  Posso assistir pelo celular?
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                    <span>Posso assistir pelo celular?</span>
+                  </div>
+                  <ChevronDown className="w-5 h-5 text-gray-400 faq-arrow" />
                 </summary>
-                <div className="mt-3 text-sm text-gray-600">
+                <div className="mt-3 text-sm text-gray-600 pl-5">
                   Claro! O curso pode ser acessado de qualquer dispositivo: celular, tablet ou computador. Estude onde e quando quiser!
                 </div>
               </details>
