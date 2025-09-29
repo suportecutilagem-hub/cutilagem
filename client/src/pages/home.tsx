@@ -99,9 +99,11 @@ export default function Home() {
               <AnimatedSection>
                 <div className="bg-white border-2 border-primary rounded-lg p-6 shadow-md">
                   <div className="text-center mb-4">
-                    <div className="flex items-center justify-center space-x-2 mb-2">
-                      <span className="text-2xl text-muted-foreground line-through">R$ 297</span>
-                      <span className="text-4xl font-bold text-primary">R$ 19,90</span>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mb-2">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xl sm:text-2xl text-muted-foreground line-through">R$ 297</span>
+                        <span className="text-3xl sm:text-4xl font-bold text-primary">R$ 19,90</span>
+                      </div>
                       <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full font-bold">93% OFF</span>
                     </div>
                     <p className="text-sm text-muted-foreground">
@@ -179,38 +181,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* INSTRUCTOR AUTHORITY */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <AnimatedSection>
-            <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold mb-6">Quem vai te Ensinar</h3>
-              <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl p-8 max-w-2xl mx-auto">
-                <div className="flex flex-col md:flex-row items-center gap-6">
-                  <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center">
-                    <Users className="w-12 h-12 text-white" />
-                  </div>
-                  <div className="text-left">
-                    <h4 className="text-xl font-bold mb-2">Especialista em Cutilagem Russa</h4>
-                    <div className="space-y-2 text-sm text-gray-600">
-                      <p>✓ <strong>8+ anos</strong> de experiência no mercado</p>
-                      <p>✓ <strong>23.000+ alunas</strong> certificadas com sucesso</p>
-                      <p>✓ <strong>Referência nacional</strong> em técnicas avançadas</p>
-                      <p>✓ <strong>Certificada internacionalmente</strong> em Cutilagem Russa</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-6 p-4 bg-white rounded-lg border border-primary/20">
-                  <p className="text-center text-sm italic text-gray-700">
-                    "Minha missão é democratizar o conhecimento da Cutilagem Russa e 
-                    ajudar cada manicure a conquistar sua independência financeira."
-                  </p>
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
 
       {/* BONUS VALUE STACK */}
       <section className="py-16 bg-gray-50">
@@ -451,15 +421,13 @@ export default function Home() {
       </section>
 
       {/* GUARANTEE SECTION */}
-      <section className="py-16 bg-secondary">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+      <section className="py-12 bg-gradient-to-r from-green-50 to-emerald-50">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
           <AnimatedSection>
-            <div className="bg-card rounded-xl p-8 md:p-12 shadow-lg" data-testid="guarantee-section">
-              <div className="mb-6">
-                <Shield className="w-16 h-16 text-green-500 mb-4 mx-auto" />
-              </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-6" data-testid="guarantee-title">
-                Nossa Garantia para Você
+            <div className="bg-white rounded-lg p-6 shadow-sm border border-green-200" data-testid="guarantee-section">
+              <Shield className="w-12 h-12 text-green-600 mb-4 mx-auto" />
+              <h3 className="text-xl font-bold mb-4 text-green-800" data-testid="guarantee-title">
+                Garantia Completa
               </h3>
               <p className="text-lg text-muted-foreground mb-6" data-testid="guarantee-description">
                 ✅ Acesso vitalício ao conteúdo<br/>
@@ -467,10 +435,6 @@ export default function Home() {
                 ✅ Suporte especializado incluso<br/>
                 ✅ Atualizações gratuitas
               </p>
-              <div className="flex justify-center items-center space-x-4 text-green-500">
-                <CheckCircle className="w-6 h-6" />
-                <span className="text-lg font-semibold">100% Seguro e Confiável</span>
-              </div>
             </div>
           </AnimatedSection>
         </div>
@@ -498,9 +462,13 @@ export default function Home() {
                   <span className="text-lg text-gray-400 line-through">R$ 297</span>
                   <span className="text-3xl font-bold text-primary">R$ 19,90</span>
                 </div>
-                <p className="text-xs text-gray-500 mt-2">
-                  ⬆️ Role para cima e garanta sua vaga
-                </p>
+                <a
+                  href={checkoutUrl}
+                  className="inline-block w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 px-4 rounded-lg text-sm text-center transition-all duration-200 shadow-lg hover:shadow-xl mt-3"
+                  data-testid="final-message-cta"
+                >
+                  Garantir Minha Vaga Agora
+                </a>
               </div>
             </div>
           </AnimatedSection>
@@ -508,113 +476,103 @@ export default function Home() {
       </section>
 
       {/* FAQ FOOTER SECTION */}
-      <section className="py-16 bg-secondary">
-        <div className="container mx-auto px-4 max-w-4xl">
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-3xl">
           <AnimatedSection>
-            <div className="text-center mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4" data-testid="faq-title">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold mb-3" data-testid="faq-title">
                 Perguntas Frequentes
               </h3>
-              <p className="text-lg text-muted-foreground" data-testid="faq-subtitle">
+              <p className="text-muted-foreground" data-testid="faq-subtitle">
                 Tire suas dúvidas sobre o curso
               </p>
             </div>
-          </AnimatedSection>
 
-          <div className="space-y-4">
-            <AnimatedSection>
-              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-1">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
+            <div className="space-y-3">
+              <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-1">
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
                   Por quanto tempo terei acesso ao curso?
                 </summary>
-                <div className="mt-4 text-muted-foreground">
+                <div className="mt-3 text-sm text-gray-600">
                   Você terá acesso vitalício ao curso! Poderá assistir quantas vezes quiser, no seu próprio ritmo, sem pressa.
                 </div>
               </details>
-            </AnimatedSection>
 
-            <AnimatedSection>
-              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-2">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
+              <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-2">
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
                   Vou receber certificado?
                 </summary>
-                <div className="mt-4 text-muted-foreground">
+                <div className="mt-3 text-sm text-gray-600">
                   Sim! Você receberá 6 certificados: Cutilagem Russa + 5 cursos bônus completos. Todos os certificados são válidos e reconhecidos.
                 </div>
               </details>
-            </AnimatedSection>
 
-            <AnimatedSection>
-              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-3">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
+              <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-3">
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
                   Preciso ter experiência prévia?
                 </summary>
-                <div className="mt-4 text-muted-foreground">
+                <div className="mt-3 text-sm text-gray-600">
                   Não! O curso é completo e foi desenvolvido tanto para iniciantes quanto para profissionais que querem aperfeiçoar a técnica.
                 </div>
               </details>
-            </AnimatedSection>
 
-            <AnimatedSection>
-              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-4">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
+              <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-4">
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
                   Quais materiais preciso ter?
                 </summary>
-                <div className="mt-4 text-muted-foreground">
+                <div className="mt-3 text-sm text-gray-600">
                   O curso inclui uma lista completa de materiais e onde comprá-los. Além disso, você ganha 30% de desconto na compra dos materiais!
                 </div>
               </details>
-            </AnimatedSection>
 
-            <AnimatedSection>
-              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-5">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
+              <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-5">
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
                   Como funciona o acesso?
                 </summary>
-                <div className="mt-4 text-muted-foreground">
+                <div className="mt-3 text-sm text-gray-600">
                   Após a compra, você receberá o acesso imediatamente no seu e-mail. O curso fica disponível 24h por dia na nossa plataforma.
                 </div>
               </details>
-            </AnimatedSection>
 
-            <AnimatedSection>
-              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-6">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
+              <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-6">
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
                   São vídeo aulas?
                 </summary>
-                <div className="mt-4 text-muted-foreground">
+                <div className="mt-3 text-sm text-gray-600">
                   Sim! Todas as aulas e bônus são em vídeo aulas. Conteúdo 100% em vídeo para você aprender de forma prática e visual.
                 </div>
               </details>
-            </AnimatedSection>
 
-            <AnimatedSection>
-              <details className="bg-card rounded-lg p-6 shadow-md" data-testid="faq-item-7">
-                <summary className="font-bold text-lg cursor-pointer hover:text-primary transition-colors flex items-center">
-                  <HelpCircle className="w-5 h-5 text-primary mr-2" />
+              <details className="bg-white rounded-lg p-5 shadow-sm border border-gray-200" data-testid="faq-item-7">
+                <summary className="font-semibold text-base cursor-pointer hover:text-primary transition-colors flex items-center">
+                  <HelpCircle className="w-4 h-4 text-primary mr-2" />
                   Posso assistir pelo celular?
                 </summary>
-                <div className="mt-4 text-muted-foreground">
+                <div className="mt-3 text-sm text-gray-600">
                   Claro! O curso pode ser acessado de qualquer dispositivo: celular, tablet ou computador. Estude onde e quando quiser!
                 </div>
               </details>
-            </AnimatedSection>
-          </div>
+            </div>
+          </AnimatedSection>
 
           <AnimatedSection>
             <div className="text-center mt-12 p-6 bg-primary/5 rounded-lg border border-primary/20">
               <p className="text-lg font-semibold text-primary mb-2">
                 Pronta para transformar sua carreira?
               </p>
-              <p className="text-sm text-muted-foreground">
-                ⬆️ Role para cima e garanta sua vaga por R$ 19,90
-              </p>
+              <a
+                href={checkoutUrl}
+                className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-3 px-6 rounded-lg text-center transition-all duration-200 shadow-lg hover:shadow-xl"
+                data-testid="faq-cta-button"
+              >
+                Garantir Minha Vaga por R$ 19,90
+              </a>
             </div>
           </AnimatedSection>
         </div>
