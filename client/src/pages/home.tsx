@@ -1,12 +1,10 @@
 import { AnimatedSection } from "@/components/ui/animated-section";
-import { Shield, Clock, Users, Award, CheckCircle, Star, TrendingUp, HelpCircle, PlayCircle, BookOpen, Sparkles, Gift, Instagram, Paintbrush, Palette, Percent, ChevronDown, Quote } from "lucide-react";
+import { Shield, Clock, Users, Award, CheckCircle, Star, TrendingUp, HelpCircle, PlayCircle, BookOpen, Sparkles, Gift, Instagram, Paintbrush, Palette, Percent, ChevronDown } from "lucide-react";
 import heroImage from "@assets/image_1758982671326.png";
-import testimonial1 from "@assets/stock_images/professional_headsho_55313f81.jpg";
-import testimonial2 from "@assets/stock_images/professional_headsho_d6091e6a.jpg";
-import testimonial3 from "@assets/stock_images/professional_headsho_80e8e88b.jpg";
-import testimonial4 from "@assets/stock_images/professional_headsho_74503caf.jpg";
-import testimonial5 from "@assets/stock_images/professional_headsho_110dcdfb.jpg";
-import testimonial6 from "@assets/stock_images/professional_headsho_635b40ec.jpg";
+import testimonial1 from "@assets/stock_images/professional_portrai_a46df427.jpg";
+import testimonial2 from "@assets/stock_images/professional_portrai_45dd0c53.jpg";
+import testimonial3 from "@assets/stock_images/professional_portrai_8f879100.jpg";
+import testimonial4 from "@assets/stock_images/professional_portrai_abed84a4.jpg";
 
 const checkoutUrl = "https://pay.cutilagemrussa.com/checkout-6880/?add-to-cart=6880";
 
@@ -50,39 +48,25 @@ const testimonials = [
     image: testimonial1
   },
   {
-    name: "Marcia Oliveira",
+    name: "Mei Chen",
     location: "Rio de Janeiro, RJ",
     text: "Eu tinha medo de usar a técnica russa, mas o curso explica tudo tão bem que me senti segura. Hoje faço cutilagem em todas as minhas clientes e elas sempre voltam. Meu faturamento aumentou muito!",
     rating: 5,
     image: testimonial2
   },
   {
-    name: "Rosa Lima",
+    name: "Aisha Silva",
     location: "Belo Horizonte, MG",
-    text: "Com mais de 30 anos de profissão, achei que já sabia tudo. Mas a Cutilagem Russa renovou minha carreira! Aprendi uma técnica incrível e agora atendo clientes VIP que pagam o dobro.",
+    text: "Com anos de profissão, achei que já sabia tudo. Mas a Cutilagem Russa renovou minha carreira! Aprendi uma técnica incrível e agora atendo clientes VIP que pagam o dobro.",
     rating: 5,
     image: testimonial3
   },
   {
-    name: "Carolina Ferreira",
+    name: "Helena Costa",
     location: "Brasília, DF",
     text: "O curso é muito completo! Aprendi desde os materiais até como precificar. Em 2 meses já recuperei o investimento e agora tenho lista de espera. Super recomendo!",
     rating: 5,
     image: testimonial4
-  },
-  {
-    name: "Patricia Costa",
-    location: "Curitiba, PR",
-    text: "Estava desanimada com a profissão, mas a Cutilagem Russa mudou tudo! As aulas são claras, o certificado é reconhecido e minhas clientes ficam impressionadas com o resultado. Valeu muito a pena!",
-    rating: 5,
-    image: testimonial5
-  },
-  {
-    name: "Helena Martins",
-    location: "Porto Alegre, RS",
-    text: "Nunca pensei que aos 60 anos iria aprender uma técnica nova tão moderna. O curso é excelente, fácil de entender e agora me sinto renovada na profissão. Minhas clientes amam!",
-    rating: 5,
-    image: testimonial6
   }
 ];
 
@@ -523,8 +507,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="relative flex-grow">
-                    <Quote className="w-8 h-8 text-primary/20 absolute -top-2 -left-2" />
-                    <p className="text-gray-700 text-sm leading-relaxed pl-6" data-testid={`testimonial-text-${index}`}>
+                    <p className="text-gray-700 text-sm leading-relaxed" data-testid={`testimonial-text-${index}`}>
                       {testimonial.text}
                     </p>
                   </div>
