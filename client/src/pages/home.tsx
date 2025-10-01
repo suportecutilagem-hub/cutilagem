@@ -1,10 +1,10 @@
 import { AnimatedSection } from "@/components/ui/animated-section";
 import { Shield, Clock, Users, Award, CheckCircle, Star, TrendingUp, HelpCircle, PlayCircle, BookOpen, Sparkles, Gift, Instagram, Paintbrush, Palette, Percent, ChevronDown } from "lucide-react";
 import heroImage from "@assets/image_1758982671326.png";
-import testimonial1 from "@assets/stock_images/professional_portrai_a46df427.jpg";
-import testimonial2 from "@assets/stock_images/professional_portrai_45dd0c53.jpg";
-import testimonial3 from "@assets/stock_images/professional_portrai_8f879100.jpg";
-import testimonial4 from "@assets/stock_images/professional_portrai_abed84a4.jpg";
+import testimonial1 from "@assets/image_1759354704201.png";
+import testimonial2 from "@assets/image_1759354751319.png";
+import testimonial3 from "@assets/image_1759354734804.png";
+import testimonial4 from "@assets/image_1759354779659.png";
 
 const checkoutUrl = "https://pay.cutilagemrussa.com/checkout-6880/?add-to-cart=6880";
 
@@ -48,7 +48,7 @@ const testimonials = [
     image: testimonial1
   },
   {
-    name: "Mei Chen",
+    name: "Paloma Vidal",
     location: "Rio de Janeiro, RJ",
     text: "Eu tinha medo de usar a técnica russa, mas o curso explica tudo tão bem que me senti segura. Hoje faço cutilagem em todas as minhas clientes e elas sempre voltam. Meu faturamento aumentou muito!",
     rating: 5,
@@ -64,7 +64,7 @@ const testimonials = [
   {
     name: "Helena Costa",
     location: "Brasília, DF",
-    text: "O curso é muito completo! Aprendi desde os materiais até como precificar. Em 2 meses já recuperei o investimento e agora tenho lista de espera. Super recomendo!",
+    text: "Comecei do zero e em apenas 3 semanas já estava atendendo minhas primeiras clientes com a técnica russa. O curso ensina tudo de forma clara e prática. Hoje tenho minha própria clientela fiel!",
     rating: 5,
     image: testimonial4
   }
