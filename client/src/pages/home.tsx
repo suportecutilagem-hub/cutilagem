@@ -472,96 +472,29 @@ export default function Home() {
       </section>
 
       {/* WHY SO CHEAP */}
-      <section className="py-16 bg-gradient-to-b from-white to-gray-50">
-        <div className="container mx-auto px-4 max-w-5xl">
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center max-w-4xl">
           <AnimatedSection>
-            <div className="text-center mb-10">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
-                Por que esse valor especial?
-              </h3>
-              <p className="text-lg text-gray-600">
-                Você pode estar se perguntando: "Por que tão barato?"
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-10">
-            <AnimatedSection>
-              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-primary/20 hover:border-primary/40 transition-all">
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <Users className="w-7 h-7 text-primary" />
-                </div>
-                <h4 className="font-bold text-lg mb-3 text-center">Democratizar o Conhecimento</h4>
-                <p className="text-gray-600 text-sm text-center leading-relaxed">
-                  Nossa missão é tornar a Cutilagem Russa acessível para todas as profissionais que querem crescer, independente da situação financeira
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-primary/20 hover:border-primary/40 transition-all">
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <TrendingUp className="w-7 h-7 text-primary" />
-                </div>
-                <h4 className="font-bold text-lg mb-3 text-center">Crescimento em Escala</h4>
-                <p className="text-gray-600 text-sm text-center leading-relaxed">
-                  Quanto mais profissionais dominam a técnica, mais forte fica nossa comunidade e referência no mercado
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="bg-white rounded-xl p-6 shadow-lg border-2 border-primary/20 hover:border-primary/40 transition-all">
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4 mx-auto">
-                  <Sparkles className="w-7 h-7 text-primary" />
-                </div>
-                <h4 className="font-bold text-lg mb-3 text-center">Promoção de Lançamento</h4>
-                <p className="text-gray-600 text-sm text-center leading-relaxed">
-                  Preço especial para as primeiras alunas que vão divulgar o curso e compartilhar seus resultados
-                </p>
-              </div>
-            </AnimatedSection>
-          </div>
-
-          <AnimatedSection>
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-3 border-amber-300 rounded-2xl p-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-amber-200/30 rounded-full -mr-16 -mt-16"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-orange-200/30 rounded-full -ml-12 -mb-12"></div>
+            <h3 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800">
+              Por que esse valor especial?
+            </h3>
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-300 rounded-2xl p-8 md:p-10 shadow-lg relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-amber-200/20 rounded-full -mr-20 -mt-20"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-orange-200/20 rounded-full -ml-16 -mb-16"></div>
               
-              <div className="relative z-10 text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-400 rounded-full mb-4">
-                  <Clock className="w-8 h-8 text-white" />
-                </div>
-                <h4 className="text-2xl font-bold mb-4 text-gray-800">
-                  ⚠️ Atenção: Oferta por Tempo Limitado
-                </h4>
-                <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto mb-4">
-                  Quando atingirmos nossa meta de alunas, <strong className="text-primary">o valor volta para R$ 297,00</strong> sem aviso prévio.
+              <div className="relative z-10">
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                  Estamos liberando uma promoção exclusiva, com poucas vagas disponíveis, para que você tenha a chance de aprender a técnica que já transformou a carreira e a renda de <strong>milhares de manicures.</strong>
                 </p>
-                <p className="text-base text-gray-600 leading-relaxed max-w-2xl mx-auto">
-                  Não perca essa oportunidade única de transformar sua carreira pagando menos de 7% do valor real do curso!
-                </p>
-                
-                <div className="mt-6 inline-block bg-white px-6 py-3 rounded-lg shadow-md">
-                  <p className="text-sm text-gray-500 mb-1">Você economiza:</p>
-                  <p className="text-3xl font-bold text-primary">R$ 277,10</p>
+                <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 mb-6 shadow-md">
+                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    Mas atenção: <strong className="text-primary">as vagas são limitadas e o preço promocional pode acabar a qualquer momento.</strong>
+                  </p>
                 </div>
+                <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                  Garanta a sua agora e dê o próximo passo na sua profissão!
+                </p>
               </div>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection>
-            <div className="text-center mt-10">
-              <a
-                href={checkoutUrl}
-                className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-5 px-10 rounded-lg text-xl transition-all duration-200 cta-pulse shadow-xl"
-                data-testid="cta-after-special-price"
-              >
-                Garantir Minha Vaga por R$ 19,90
-              </a>
-              <p className="text-sm text-gray-500 mt-4">
-                ✓ Acesso imediato após o pagamento
-              </p>
             </div>
           </AnimatedSection>
         </div>
