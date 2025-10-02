@@ -91,7 +91,7 @@ export default function Home() {
               <img
                 src={heroImage}
                 alt="Curso de Cutilagem Russa - Manicure profissional"
-                className="rounded-xl shadow-lg w-full max-w-sm h-auto"
+                className="rounded-xl shadow-lg w-full max-w-sm h-auto border-2 border-primary"
                 data-testid="hero-image-mobile"
                 loading="eager"
               />
@@ -191,7 +191,7 @@ export default function Home() {
               <img
                 src={heroImage}
                 alt="Curso de Cutilagem Russa - Manicure profissional"
-                className="rounded-xl shadow-lg w-full h-auto"
+                className="rounded-xl shadow-lg w-full h-auto border-2 border-primary"
                 data-testid="hero-image"
                 loading="eager"
               />
