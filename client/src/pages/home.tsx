@@ -181,25 +181,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY SO CHEAP */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4 text-center max-w-3xl">
-          <AnimatedSection>
-            <h3 className="text-3xl font-bold mb-6 text-gray-800">
-              Por que esse valor especial?
-            </h3>
-            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Estamos liberando uma promoção exclusiva, com poucas vagas disponíveis, para que você tenha a chance de aprender a técnica que já transformou a carreira e a renda de milhares de manicures.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed mt-4">
-                Mas atenção: <strong className="text-primary">as vagas são limitadas e o preço promocional pode acabar a qualquer momento.</strong> Garanta a sua agora e dê o próximo passo na sua profissão!
-              </p>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
       {/* VALUE HIGHLIGHTS */}
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4 text-center max-w-4xl">
@@ -487,6 +468,25 @@ export default function Home() {
               </AnimatedSection>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* WHY SO CHEAP */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <AnimatedSection>
+            <h3 className="text-3xl font-bold mb-6 text-gray-800">
+              Por que esse valor especial?
+            </h3>
+            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Estamos liberando uma promoção exclusiva, com poucas vagas disponíveis, para que você tenha a chance de aprender a técnica que já transformou a carreira e a renda de milhares de manicures.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mt-4">
+                Mas atenção: <strong className="text-primary">as vagas são limitadas e o preço promocional pode acabar a qualquer momento.</strong> Garanta a sua agora e dê o próximo passo na sua profissão!
+              </p>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
