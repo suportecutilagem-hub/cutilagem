@@ -117,15 +117,15 @@ export default function Home() {
                 <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 p-6 rounded-lg" data-testid="social-proof">
                   <div className="flex items-center space-x-2 mb-3">
                     <Users className="w-5 h-5 text-green-600" />
-                    <span className="text-green-800 font-semibold">✨ Junte-se a mais de 23.000 manicures de sucesso</span>
+                    <span className="text-green-800 font-semibold">Mais de 23.000 manicures certificadas</span>
                   </div>
                   <div className="flex items-center space-x-2 mb-3">
                     <TrendingUp className="w-5 h-5 text-green-600" />
-                    <span className="text-green-800 font-semibold">💰 Aumente sua renda em até R$ 2.500/mês</span>
+                    <span className="text-green-800 font-semibold">Faturamento médio: R$ 2.500/mês a mais</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Award className="w-5 h-5 text-green-600" />
-                    <span className="text-green-800 font-semibold">🏆 Certificado de conclusão profissional</span>
+                    <span className="text-green-800 font-semibold">Certificado profissional reconhecido</span>
                   </div>
                 </div>
               </AnimatedSection>
