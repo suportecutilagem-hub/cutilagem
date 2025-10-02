@@ -78,7 +78,7 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Subtle urgency banner */}
           <AnimatedSection className="mb-8">
-            <div className="bg-amber-50 border border-amber-200 text-black py-2 px-4 rounded-lg text-center" data-testid="urgency-banner">
+            <div className="bg-amber-50 border border-amber-200 text-amber-800 py-2 px-4 rounded-lg text-center" data-testid="urgency-banner">
               <p className="text-sm font-medium">
                 ⚡ Promoção especial: últimas vagas disponíveis
               </p>
