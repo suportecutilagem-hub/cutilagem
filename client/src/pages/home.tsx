@@ -128,11 +128,11 @@ export default function Home() {
                     
                     <div className="flex items-start space-x-3 group">
                       <div className="flex-shrink-0 w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
-                        <TrendingUp className="w-6 h-6 text-white" />
+                        <PlayCircle className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1">
-                        <p className="text-green-900 font-bold text-lg">R$ 2.500/mês a mais</p>
-                        <p className="text-green-700 text-sm">faturamento médio das alunas</p>
+                        <p className="text-green-900 font-bold text-lg">Acesso vitalício</p>
+                        <p className="text-green-700 text-sm">assista quando e onde quiser</p>
                       </div>
                     </div>
                     
