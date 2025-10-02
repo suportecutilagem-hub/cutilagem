@@ -157,7 +157,7 @@ export default function Home() {
                         <span className="text-xl sm:text-2xl text-muted-foreground line-through">R$ 297</span>
                         <span className="text-3xl sm:text-4xl font-bold text-primary">R$ 35,00</span>
                       </div>
-                      <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full font-bold">93% OFF</span>
+                      <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full font-bold">88% OFF</span>
                     </div>
                     <p className="text-sm text-muted-foreground">
                       Curso completo + 11 bônus exclusivos
