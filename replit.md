@@ -4,7 +4,7 @@
 
 This is a Brazilian Portuguese landing page for an online Russian manicure course ("Cutilagem Russa"). The application is built as a modern full-stack web application using React with TypeScript for the frontend and Express.js for the backend. The landing page is designed to be a high-conversion sales page with animated elements, testimonials, and strong call-to-action buttons directing users to a checkout URL. The page emphasizes scarcity marketing (only 8 spots available) and promotional pricing (R$ 19.90 instead of R$ 297.00).
 
-**Status**: Successfully imported and configured for Replit environment (October 1, 2025)
+**Status**: Successfully imported and configured for Replit environment (October 2, 2025)
 
 ## User Preferences
 
