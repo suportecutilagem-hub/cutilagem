@@ -186,14 +186,14 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <AnimatedSection>
             <h3 className="text-3xl font-bold mb-6 text-gray-800">
-              Porque esse valor?
+              Por que esse valor especial?
             </h3>
             <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Estamos em uma <strong className="text-primary">promoção especial com poucas vagas disponíveis!</strong> Abrimos essa oportunidade para que todas as manicures tenham a chance de aprender essa técnica que transforma carreiras. 
+                Estamos liberando uma promoção exclusiva, com poucas vagas disponíveis, para que você tenha a chance de aprender a técnica que já transformou a carreira e a renda de milhares de manicures.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mt-4">
-                Queremos que você também faça parte das milhares de profissionais que já aumentaram sua renda com a Cutilagem Russa. <strong>As vagas são limitadas e o preço promocional pode acabar a qualquer momento!</strong>
+                Mas atenção: <strong className="text-primary">as vagas são limitadas e o preço promocional pode acabar a qualquer momento.</strong> Garanta a sua agora e dê o próximo passo na sua profissão!
               </p>
             </div>
           </AnimatedSection>
