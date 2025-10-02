@@ -114,18 +114,37 @@ export default function Home() {
               </AnimatedSection>
               
               <AnimatedSection>
-                <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 p-6 rounded-lg" data-testid="social-proof">
-                  <div className="flex items-center space-x-2 mb-3">
-                    <Users className="w-5 h-5 text-green-600" />
-                    <span className="text-green-800 font-semibold">Mais de 23.000 manicures certificadas</span>
-                  </div>
-                  <div className="flex items-center space-x-2 mb-3">
-                    <TrendingUp className="w-5 h-5 text-green-600" />
-                    <span className="text-green-800 font-semibold">Faturamento médio: R$ 2.500/mês a mais</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Award className="w-5 h-5 text-green-600" />
-                    <span className="text-green-800 font-semibold">Certificado profissional reconhecido</span>
+                <div className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 border-2 border-green-300 p-6 rounded-xl shadow-lg" data-testid="social-proof">
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-3 group">
+                      <div className="flex-shrink-0 w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                        <Users className="w-6 h-6 text-white" />
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-green-900 font-bold text-lg">Mais de 23.000</p>
+                        <p className="text-green-700 text-sm">manicures certificadas</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-3 group">
+                      <div className="flex-shrink-0 w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                        <TrendingUp className="w-6 h-6 text-white" />
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-green-900 font-bold text-lg">R$ 2.500/mês a mais</p>
+                        <p className="text-green-700 text-sm">faturamento médio das alunas</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start space-x-3 group">
+                      <div className="flex-shrink-0 w-10 h-10 bg-teal-600 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                        <Award className="w-6 h-6 text-white" />
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-green-900 font-bold text-lg">Certificado profissional</p>
+                        <p className="text-green-700 text-sm">reconhecido no mercado</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </AnimatedSection>
