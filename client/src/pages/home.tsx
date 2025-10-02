@@ -186,7 +186,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <AnimatedSection>
             <h3 className="text-3xl font-bold mb-6 text-gray-800">
-              Porque tão barato?
+              Porque esse valor?
             </h3>
             <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
               <p className="text-lg text-gray-700 leading-relaxed">
