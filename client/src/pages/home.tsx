@@ -102,8 +102,8 @@ export default function Home() {
             <div className="space-y-6">
               <AnimatedSection>
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight" data-testid="hero-title">
-                  <span className="text-primary">Cutilagem Russa:</span> A Técnica que 
-                  <span className="block">Multiplica sua Renda</span>
+                  <span className="text-primary">Cutilagem Russa:</span>
+                  <span className="block">A Técnica que Multiplica sua Renda</span>
                 </h1>
               </AnimatedSection>
               
