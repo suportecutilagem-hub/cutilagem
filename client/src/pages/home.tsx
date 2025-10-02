@@ -200,40 +200,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* VALUE HIGHLIGHTS */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4 text-center max-w-4xl">
-          <AnimatedSection>
-            <h3 className="text-2xl font-bold mb-8 text-gray-800">
-              O que você leva neste investimento:
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <div className="text-primary mb-3">
-                  <CheckCircle className="w-8 h-8 mx-auto" />
-                </div>
-                <h4 className="font-semibold mb-2">Curso Completo</h4>
-                <p className="text-sm text-gray-600">Técnica de Cutilagem Russa do básico ao avançado</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <div className="text-primary mb-3">
-                  <Award className="w-8 h-8 mx-auto" />
-                </div>
-                <h4 className="font-semibold mb-2">11 Bônus Exclusivos</h4>
-                <p className="text-sm text-gray-600">Cursos extras que sozinhos valem mais que o investimento</p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm border">
-                <div className="text-primary mb-3">
-                  <Shield className="w-8 h-8 mx-auto" />
-                </div>
-                <h4 className="font-semibold mb-2">Certificado Profissional</h4>
-                <p className="text-sm text-gray-600">Reconhecido no mercado de trabalho</p>
-              </div>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
 
       {/* WHY RUSSIAN MANICURE */}
       <section className="bg-white py-16">
