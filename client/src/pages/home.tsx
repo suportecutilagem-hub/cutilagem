@@ -118,11 +118,11 @@ export default function Home() {
                   <div className="space-y-4">
                     <div className="flex items-start space-x-3 group">
                       <div className="flex-shrink-0 w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
-                        <Users className="w-6 h-6 text-white" />
+                        <Gift className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1">
-                        <p className="text-green-900 font-bold text-lg">Mais de 23.000</p>
-                        <p className="text-green-700 text-sm">manicures certificadas</p>
+                        <p className="text-green-900 font-bold text-lg">11 Bônus exclusivos</p>
+                        <p className="text-green-700 text-sm">cursos extras inclusos</p>
                       </div>
                     </div>
                     
@@ -141,8 +141,8 @@ export default function Home() {
                         <Award className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1">
-                        <p className="text-green-900 font-bold text-lg">Certificado profissional</p>
-                        <p className="text-green-700 text-sm">reconhecido no mercado</p>
+                        <p className="text-green-900 font-bold text-lg">6 Certificados profissionais</p>
+                        <p className="text-green-700 text-sm">reconhecidos no mercado</p>
                       </div>
                     </div>
                   </div>
