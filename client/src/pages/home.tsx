@@ -181,6 +181,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WHY SO CHEAP */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <AnimatedSection>
+            <h3 className="text-3xl font-bold mb-6 text-gray-800">
+              Porque tão barato?
+            </h3>
+            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Estamos em uma <strong className="text-primary">promoção especial com poucas vagas disponíveis!</strong> Abrimos essa oportunidade para que todas as manicures tenham a chance de aprender essa técnica que transforma carreiras. 
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mt-4">
+                Queremos que você também faça parte das milhares de profissionais que já aumentaram sua renda com a Cutilagem Russa. <strong>As vagas são limitadas e o preço promocional pode acabar a qualquer momento!</strong>
+              </p>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* VALUE HIGHLIGHTS */}
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4 text-center max-w-4xl">
