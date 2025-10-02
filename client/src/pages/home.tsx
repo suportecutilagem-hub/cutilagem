@@ -486,7 +486,7 @@ export default function Home() {
       </section>
 
       {/* FINAL MESSAGE SECTION */}
-      <section className="py-16 bg-primary/5">
+      <section className="pt-16 pb-8 bg-primary/5">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <AnimatedSection>
             <div className="space-y-6">
@@ -521,7 +521,7 @@ export default function Home() {
       </section>
 
       {/* GUARANTEE SECTION */}
-      <section className="py-16 bg-gradient-to-br from-primary/5 to-primary/10">
+      <section className="pt-8 pb-16 bg-gradient-to-br from-primary/5 to-primary/10">
         <div className="container mx-auto px-4 max-w-4xl">
           <AnimatedSection>
             <div className="text-center" data-testid="guarantee-section">
