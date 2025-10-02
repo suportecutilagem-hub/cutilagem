@@ -109,7 +109,7 @@ export default function Home() {
               
               <AnimatedSection>
                 <h2 className="text-xl md:text-2xl text-muted-foreground font-medium" data-testid="hero-subtitle">
-                  Aprenda passo a passo a técnica que já mudou a vida de milhares de manicures e pode ser o diferencial que vai transformar sua carreira.
+                  Aprenda passo a passo a técnica que já <strong className="text-primary">mudou a vida de milhares de manicures</strong> e pode ser o diferencial que vai <strong className="text-primary">transformar sua carreira.</strong>
                 </h2>
               </AnimatedSection>
               
