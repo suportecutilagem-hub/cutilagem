@@ -216,53 +216,6 @@ export default function Home() {
       </section>
 
 
-      {/* BONUS VALUE STACK */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <AnimatedSection>
-            <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold mb-4">Valor Total do Pacote Completo</h3>
-              <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-primary/20">
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <h4 className="font-semibold mb-4 text-lg">Curso Principal:</h4>
-                    <p className="text-gray-600 mb-2">• Cutilagem Russa Completa</p>
-                    <p className="text-gray-600 mb-2">• Certificado Profissional</p>
-                    <p className="text-gray-600 mb-2">• Suporte Vitalício</p>
-                    <p className="text-right font-bold text-primary">R$ 297,00</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-4 text-lg">11 Bônus Exclusivos:</h4>
-                    <p className="text-gray-600 mb-2">• 5 Cursos Populares e Atualizados</p>
-                    <p className="text-gray-600 mb-2">• Todos com Certificado</p>
-                    <p className="text-gray-600 mb-2">• + 6 Bônus exclusivos</p>
-                    <p className="text-right font-bold text-primary">R$ 1.247,00</p>
-                  </div>
-                </div>
-                <div className="border-t pt-6">
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="text-xl font-bold">Valor Total:</span>
-                    <span className="text-2xl font-bold text-gray-500 line-through">R$ 1.544,00</span>
-                  </div>
-                  <div className="flex justify-between items-baseline mb-6">
-                    <span className="text-2xl font-bold text-primary">Você paga hoje:</span>
-                    <div className="flex items-baseline">
-                      <span className="text-2xl font-bold text-primary">R$</span>
-                      <span className="text-4xl font-bold text-primary ml-1">19,90</span>
-                    </div>
-                  </div>
-                  <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-                    <p className="text-center text-red-700 font-semibold">
-                      🔥 Economia de R$ 1.524,10 (98,7% de desconto!)
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
       {/* WHY RUSSIAN MANICURE */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -524,7 +477,7 @@ export default function Home() {
           <AnimatedSection>
             <div className="text-center" data-testid="guarantee-section">
               <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-lg mb-6">
-                <Shield className="w-10 h-10 text-primary" />
+                <Shield className="w-10 h-10 text-green-600" />
               </div>
               <h3 className="text-3xl font-bold mb-8 text-gray-800" data-testid="guarantee-title">
                 Garantia Completa
