@@ -499,8 +499,8 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
                 <div className="bg-white rounded-xl p-6 shadow-sm">
                   <CheckCircle className="w-8 h-8 text-primary mb-3 mx-auto" />
-                  <h4 className="font-semibold mb-2">Acesso Vitalício</h4>
-                  <p className="text-sm text-gray-600">Assista quando e quantas vezes quiser</p>
+                  <h4 className="font-semibold mb-2">100% Seguro</h4>
+                  <p className="text-sm text-gray-600">Ambiente protegido e pagamento seguro</p>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
                   <CheckCircle className="w-8 h-8 text-primary mb-3 mx-auto" />
