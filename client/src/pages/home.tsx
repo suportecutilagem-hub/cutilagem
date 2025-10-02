@@ -384,19 +384,6 @@ export default function Home() {
               );
             })}
           </div>
-
-          {/* CTA após bônus */}
-          <AnimatedSection>
-            <div className="text-center mt-12">
-              <a
-                href={checkoutUrl}
-                className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 cta-pulse"
-                data-testid="cta-after-bonuses"
-              >
-                Garantir Curso + 11 Bônus por R$ 19,90
-              </a>
-            </div>
-          </AnimatedSection>
         </div>
       </section>
 
@@ -432,6 +419,19 @@ export default function Home() {
               </AnimatedSection>
             ))}
           </div>
+
+          {/* CTA após bônus adicionais */}
+          <AnimatedSection>
+            <div className="text-center mt-12">
+              <a
+                href={checkoutUrl}
+                className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 cta-pulse"
+                data-testid="cta-after-bonuses"
+              >
+                Garantir Curso + 11 Bônus por R$ 19,90
+              </a>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
