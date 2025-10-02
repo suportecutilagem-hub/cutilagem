@@ -478,7 +478,7 @@ export default function Home() {
             <h3 className="text-3xl font-bold mb-6 text-gray-800">
               Por que esse valor especial?
             </h3>
-            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8">
+            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl p-8 text-left md:text-center">
               <p className="text-lg text-gray-700 leading-relaxed">
                 Estamos liberando uma promoção exclusiva, com poucas vagas disponíveis, para que você tenha a chance de aprender a técnica que já transformou a carreira e a renda de milhares de manicures.
               </p>
