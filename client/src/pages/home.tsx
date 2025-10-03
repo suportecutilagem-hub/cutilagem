@@ -401,6 +401,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WHY SO CHEAP */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center max-w-4xl">
+          <AnimatedSection>
+            <h3 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800">
+              Por que esse valor especial?
+            </h3>
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-300 rounded-2xl p-8 md:p-10 shadow-lg relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-amber-200/20 rounded-full -mr-20 -mt-20"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-orange-200/20 rounded-full -ml-16 -mb-16"></div>
+              
+              <div className="relative z-10">
+                <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+                  Estamos liberando uma promoção exclusiva, com poucas vagas disponíveis, para que você tenha a chance de aprender a técnica que já transformou a carreira e a renda de <strong>milhares de manicures.</strong>
+                </p>
+                <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 mb-6 shadow-md">
+                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    Mas atenção: <strong className="text-primary">temos somente 8 vagas e o preço promocional pode acabar a qualquer momento.</strong>
+                  </p>
+                </div>
+                <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                  Garanta a sua agora e dê o próximo passo na sua profissão!
+                </p>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* TESTIMONIALS SECTION */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4 max-w-6xl">
@@ -453,35 +482,6 @@ export default function Home() {
               </AnimatedSection>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* WHY SO CHEAP */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 text-center max-w-4xl">
-          <AnimatedSection>
-            <h3 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800">
-              Por que esse valor especial?
-            </h3>
-            <div className="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-300 rounded-2xl p-8 md:p-10 shadow-lg relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-amber-200/20 rounded-full -mr-20 -mt-20"></div>
-              <div className="absolute bottom-0 left-0 w-32 h-32 bg-orange-200/20 rounded-full -ml-16 -mb-16"></div>
-              
-              <div className="relative z-10">
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
-                  Estamos liberando uma promoção exclusiva, com poucas vagas disponíveis, para que você tenha a chance de aprender a técnica que já transformou a carreira e a renda de <strong>milhares de manicures.</strong>
-                </p>
-                <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 mb-6 shadow-md">
-                  <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                    Mas atenção: <strong className="text-primary">temos somente 8 vagas e o preço promocional pode acabar a qualquer momento.</strong>
-                  </p>
-                </div>
-                <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-                  Garanta a sua agora e dê o próximo passo na sua profissão!
-                </p>
-              </div>
-            </div>
-          </AnimatedSection>
         </div>
       </section>
 
