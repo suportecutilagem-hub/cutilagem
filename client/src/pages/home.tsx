@@ -155,9 +155,9 @@ export default function Home() {
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mb-2">
                       <div className="flex items-center gap-2">
                         <span className="text-xl sm:text-2xl text-muted-foreground line-through">R$ 297</span>
-                        <span className="text-3xl sm:text-4xl font-bold text-primary">R$ 35,00</span>
+                        <span className="text-3xl sm:text-4xl font-bold text-primary">R$ 15,99</span>
                       </div>
-                      <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full font-bold">88% OFF</span>
+                      <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full font-bold">95% OFF</span>
                     </div>
                     <p className="text-sm text-muted-foreground">
                       Curso completo + 11 bônus exclusivos
@@ -169,7 +169,7 @@ export default function Home() {
                     className="block w-full bg-primary hover:bg-primary/90 text-white font-bold py-5 px-6 rounded-lg text-xl text-center transition-all duration-200 cta-pulse"
                     data-testid="main-cta"
                   >
-                    Quero Aprender Agora por R$ 35,00
+                    Quero Aprender Agora por R$ 15,99
                   </a>
                   
                   <div className="flex items-center justify-center space-x-4 mt-4 text-xs text-muted-foreground">
@@ -394,7 +394,7 @@ export default function Home() {
                 className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-200 cta-pulse"
                 data-testid="cta-after-bonuses"
               >
-                Garantir Curso + 11 Bônus por R$ 35,00
+                Garantir Curso + 11 Bônus por R$ 15,99
               </a>
             </div>
           </AnimatedSection>
@@ -505,7 +505,7 @@ export default function Home() {
                 <p className="text-sm text-gray-600 mb-2">Investimento hoje:</p>
                 <div className="flex items-center justify-center space-x-3">
                   <span className="text-lg text-gray-400 line-through">R$ 297</span>
-                  <span className="text-3xl font-bold text-primary">R$ 35,00</span>
+                  <span className="text-3xl font-bold text-primary">R$ 15,99</span>
                 </div>
                 <a
                   href={checkoutUrl}
@@ -670,7 +670,7 @@ export default function Home() {
                 className="inline-block bg-primary hover:bg-primary/90 text-white font-bold py-5 px-6 rounded-lg text-xl text-center transition-all duration-200 cta-pulse"
                 data-testid="faq-cta-button"
               >
-                Garantir Minha Vaga por R$ 35,00
+                Garantir Minha Vaga por R$ 15,99
               </a>
             </div>
           </AnimatedSection>
