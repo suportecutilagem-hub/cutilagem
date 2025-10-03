@@ -473,7 +473,7 @@ export default function Home() {
                 </p>
                 <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 mb-6 shadow-md">
                   <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                    Mas atenção: <strong className="text-primary">as vagas são limitadas e o preço promocional pode acabar a qualquer momento.</strong>
+                    Mas atenção: <strong className="text-primary">temos somente 8 vagas e o preço promocional pode acabar a qualquer momento.</strong>
                   </p>
                 </div>
                 <p className="text-base md:text-lg text-gray-600 leading-relaxed">
